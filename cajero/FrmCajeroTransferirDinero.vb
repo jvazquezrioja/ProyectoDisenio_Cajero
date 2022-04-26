@@ -11,6 +11,7 @@
 
     Dim bancoUsado As String = "" ' Variable global para el arreglo dinamico del comprobante, almacena el banco que se uso en la transferencia
 
+    'Son los botones que asignan el valor a la variable global anterior, dependiendo de cual sea presionado, el banco cambia
     Private Sub rbtnBanco1_CheckedChanged(sender As Object, e As EventArgs) Handles rbtnBanco1.CheckedChanged
         If (rbtnBanco1.Checked) Then
             bancoUsado = "Banco Azteca "
