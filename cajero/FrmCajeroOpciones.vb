@@ -10,7 +10,7 @@
     End Sub
 
     Public Shared saldo As Double = Int((5000 * Rnd()) + 1) 'Genera un saldo nuevo para cada usuario
-    Dim conjuntoDeOperaciones() As String 'Arreglo Global para generar comprobante
+    Public Shared conjuntoDeOperaciones As ArrayList = New ArrayList() 'Arreglo dinamico Global para generar comprobante
 
     Private Sub btnConsultaSaldo_Click(sender As Object, e As EventArgs) Handles btnConsultaSaldo.Click
         frmConsultarSaldo.Show() 'Abre el form de consular saldo
