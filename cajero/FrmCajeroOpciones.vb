@@ -15,6 +15,7 @@
     Public Shared conjuntoDeOperaciones As ArrayList = New ArrayList() 'Arreglo dinamico Global para generar comprobante
 
     Private Sub btnConsultaSaldo_Click(sender As Object, e As EventArgs) Handles btnConsultaSaldo.Click
+        frmComprobantes.Dispose()
         frmConsultarSaldo.Show() 'Abre el form de consular saldo
     End Sub
 

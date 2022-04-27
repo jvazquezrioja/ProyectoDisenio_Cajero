@@ -12,4 +12,9 @@
         End If
 
     End Sub
+
+    Private Sub btnRegresar_Click(sender As Object, e As EventArgs) Handles btnRegresar.Click
+        Me.Hide()
+        Me.Dispose()
+    End Sub
 End Class

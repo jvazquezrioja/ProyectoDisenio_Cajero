@@ -20,6 +20,7 @@
 
             Dim saldo As String = Val(frmCajeroAcceso.saldo)
             lblSaldo.Text = "$" + saldo
+            frmCajeroOpciones.conjuntoDeOperaciones.Add("Retiro de efectivo con un monto de $50")
         Else
             MessageBox.Show("No cuentas con suficientes fondos")
         End If
@@ -32,18 +33,20 @@
 
             Dim saldo As String = Val(frmCajeroAcceso.saldo)
             lblSaldo.Text = "$" + saldo
+            frmCajeroOpciones.conjuntoDeOperaciones.Add("Retiro de efectivo con un monto de $100")
         Else
             MessageBox.Show("No cuentas con suficientes fondos")
         End If
     End Sub
 
-    Private Sub btn200_Click(sender As Object, e As EventArgs)
+    Private Sub btn200_Click(sender As Object, e As EventArgs) Handles btn200.Click
         If (frmCajeroAcceso.saldo >= 200) Then
             frmCajeroAcceso.saldo -= 200
             MessageBox.Show("!Exito!")
 
             Dim saldo As String = Val(frmCajeroAcceso.saldo)
             lblSaldo.Text = "$" + saldo
+            frmCajeroOpciones.conjuntoDeOperaciones.Add("Retiro de efectivo con un monto de $200")
         Else
             MessageBox.Show("No cuentas con suficientes fondos")
         End If
@@ -56,6 +59,7 @@
 
             Dim saldo As String = Val(frmCajeroAcceso.saldo)
             lblSaldo.Text = "$" + saldo
+            frmCajeroOpciones.conjuntoDeOperaciones.Add("Retiro de efectivo con un monto de $500")
         Else
             MessageBox.Show("No cuentas con suficientes fondos")
         End If
@@ -68,6 +72,7 @@
 
             Dim saldo As String = Val(frmCajeroAcceso.saldo)
             lblSaldo.Text = "$" + saldo
+            frmCajeroOpciones.conjuntoDeOperaciones.Add("Retiro de efectivo con un monto de $1000")
         Else
             MessageBox.Show("No cuentas con suficientes fondos")
         End If
@@ -80,6 +85,7 @@
 
             Dim saldo As String = Val(frmCajeroAcceso.saldo)
             lblSaldo.Text = "$" + saldo
+            frmCajeroOpciones.conjuntoDeOperaciones.Add("Retiro de efectivo con un monto de $2500")
         Else
             MessageBox.Show("No cuentas con suficientes fondos")
         End If
@@ -101,6 +107,7 @@
 
             Dim saldo As String = Val(frmCajeroAcceso.saldo)
             lblSaldo.Text = "$" + saldo
+            frmCajeroOpciones.conjuntoDeOperaciones.Add("Cash withdrawal in the amount of $50")
         Else
             MessageBox.Show("Not enouch funds")
         End If
@@ -115,6 +122,7 @@
             lblSaldo.Text = "$" + saldo
         Else
             MessageBox.Show("No cuentas con suficientes fondos")
+            frmCajeroOpciones.conjuntoDeOperaciones.Add("Cash withdrawal in the amount of $100")
         End If
     End Sub
 
@@ -125,6 +133,7 @@
 
             Dim saldo As String = Val(frmCajeroAcceso.saldo)
             lblSaldo.Text = "$" + saldo
+            frmCajeroOpciones.conjuntoDeOperaciones.Add("Cash withdrawal in the amount of $200")
         Else
             MessageBox.Show("No cuentas con suficientes fondos")
         End If
@@ -137,6 +146,7 @@
 
             Dim saldo As String = Val(frmCajeroAcceso.saldo)
             lblSaldo.Text = "$" + saldo
+            frmCajeroOpciones.conjuntoDeOperaciones.Add("Cash withdrawal in the amount of $500")
         Else
             MessageBox.Show("No cuentas con suficientes fondos")
         End If
@@ -149,6 +159,7 @@
 
             Dim saldo As String = Val(frmCajeroAcceso.saldo)
             lblSaldo.Text = "$" + saldo
+            frmCajeroOpciones.conjuntoDeOperaciones.Add("Cash withdrawal in the amount of $1000")
         Else
             MessageBox.Show("No cuentas con suficientes fondos")
         End If
@@ -161,6 +172,7 @@
 
             Dim saldo As String = Val(frmCajeroAcceso.saldo)
             lblSaldo.Text = "$" + saldo
+            frmCajeroOpciones.conjuntoDeOperaciones.Add("Cash withdrawal in the amount of $2500")
         Else
             MessageBox.Show("No cuentas con suficientes fondos")
         End If
