@@ -26,7 +26,7 @@ Partial Class frmRetirarDinero
         Me.pbxNombreBanco = New System.Windows.Forms.PictureBox()
         Me.pbxLogoBanco = New System.Windows.Forms.PictureBox()
         Me.pnlEspañol = New System.Windows.Forms.Panel()
-        Me.btnSalir = New System.Windows.Forms.Button()
+        Me.btnRegresar = New System.Windows.Forms.Button()
         Me.btnOtra = New System.Windows.Forms.Button()
         Me.btn2500 = New System.Windows.Forms.Button()
         Me.btn1000 = New System.Windows.Forms.Button()
@@ -71,7 +71,7 @@ Partial Class frmRetirarDinero
         '
         'pnlEspañol
         '
-        Me.pnlEspañol.Controls.Add(Me.btnSalir)
+        Me.pnlEspañol.Controls.Add(Me.btnRegresar)
         Me.pnlEspañol.Controls.Add(Me.btnOtra)
         Me.pnlEspañol.Controls.Add(Me.btn2500)
         Me.pnlEspañol.Controls.Add(Me.btn1000)
@@ -87,15 +87,15 @@ Partial Class frmRetirarDinero
         Me.pnlEspañol.Size = New System.Drawing.Size(1004, 644)
         Me.pnlEspañol.TabIndex = 11
         '
-        'btnSalir
+        'btnRegresar
         '
-        Me.btnSalir.Location = New System.Drawing.Point(818, 517)
-        Me.btnSalir.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.btnSalir.Name = "btnSalir"
-        Me.btnSalir.Size = New System.Drawing.Size(136, 65)
-        Me.btnSalir.TabIndex = 17
-        Me.btnSalir.Text = "Salir"
-        Me.btnSalir.UseVisualStyleBackColor = True
+        Me.btnRegresar.Location = New System.Drawing.Point(818, 517)
+        Me.btnRegresar.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnRegresar.Name = "btnRegresar"
+        Me.btnRegresar.Size = New System.Drawing.Size(136, 65)
+        Me.btnRegresar.TabIndex = 17
+        Me.btnRegresar.Text = "Regresar"
+        Me.btnRegresar.UseVisualStyleBackColor = True
         '
         'btnOtra
         '
@@ -310,7 +310,7 @@ Partial Class frmRetirarDinero
     Friend WithEvents pbxNombreBanco As PictureBox
     Friend WithEvents pbxLogoBanco As PictureBox
     Friend WithEvents pnlEspañol As Panel
-    Friend WithEvents btnSalir As Button
+    Friend WithEvents btnRegresar As Button
     Friend WithEvents btnOtra As Button
     Friend WithEvents btn2500 As Button
     Friend WithEvents btn1000 As Button

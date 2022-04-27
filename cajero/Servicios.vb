@@ -1,6 +1,6 @@
 ﻿Public Class FrmPagoservicio
     Public Servicio As String
-    Private Sub BtnRegresar_Click(sender As Object, e As EventArgs) Handles BtnRegresar.Click
+    Private Sub BtnRegresar_Click(sender As Object, e As EventArgs) Handles btnRegresar.Click
         FrmCompañiasint.Dispose()
         Me.Close()
         frmCajeroOpciones.Show()
