@@ -8,7 +8,7 @@
             pnlEnglish.Visible = True
         End If
 
-        Randomize()
+
     End Sub
 
 

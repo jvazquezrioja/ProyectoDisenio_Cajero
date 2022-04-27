@@ -45,17 +45,17 @@
                     frmCajeroAcceso.saldo -= cantidadATransferir 'Resta la cantidad de transferencia del saldo
                     frmCajeroOpciones.conjuntoDeOperaciones.Add("Transferencia a " + bancoUsado + " de cuenta: " + txtNumeroCuenta.Text + " con un monto de: $" + txtCantidadTranferir.Text) 'Agrega todo el proceso de transferencia al arreglo para poder generar un comprobante
                 Else
-                    MessageBox.Show("Cantidad no es valida") 'mensaje de error
+                    MessageBox.Show("Cantidad no es valida") 'mensaje de error sí la cantidad es mayor al saldo o igual/menor a 0
                 End If
             Else
-                MessageBox.Show("Favor de introducir el numero de cuenta")
+                MessageBox.Show("Favor de introducir el numero de cuenta") 'mensaje de error sí no se introdujo un numero de cuenta
             End If
         Else
-                MessageBox.Show("Favor de seleccionar un banco")
+            MessageBox.Show("Favor de seleccionar un banco") 'mensaje de error sí no se selecciono un banco
         End If
     End Sub
 
-    Private Sub btnRegresar_Click(sender As Object, e As EventArgs) Handles btnRegresar.Click
+    Private Sub btnRegresar_Click(sender As Object, e As EventArgs) Handles btnRegresar.Click 'Boton que cierra FrmCajeroTransferencia y abre FrmcajeroOpciones
         Me.Close()
         frmCajeroOpciones.Show()
     End Sub
@@ -95,14 +95,14 @@
                     MessageBox.Show("Amount is not valid") 'mensaje de error
                 End If
             Else
-                MessageBox.Show("Please enter an account number") 'mensaje de error
+                MessageBox.Show("Please enter an account number") 'mensaje de error sí no se introdujo un numero de cuenta
             End If
         Else
-            MessageBox.Show("Please select a bank") 'mensaje de error
+            MessageBox.Show("Please select a bank") 'mensaje de error sí no se selecciono un banco
         End If
     End Sub
 
-    Private Sub btnReturn_Click(sender As Object, e As EventArgs) Handles btnReturn.Click
+    Private Sub btnReturn_Click(sender As Object, e As EventArgs) Handles btnReturn.Click 'Boton que cierra FrmCajeroTransferencia y abre FrmcajeroOpciones
         Me.Close()
         frmCajeroOpciones.Show()
     End Sub

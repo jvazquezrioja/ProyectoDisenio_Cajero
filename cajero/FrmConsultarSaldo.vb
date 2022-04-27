@@ -8,10 +8,11 @@
             btnReturn.Visible = True
         End If
 
-        Dim saldo As String = Val(frmCajeroAcceso.saldo)
-        lblSaldo.Text = "$" + saldo
+        Dim saldo As String = Val(frmCajeroAcceso.saldo) 'Transformamos el valor double de saldo a string
+        lblSaldo.Text = "$" + saldo 'Visualización del saldo en pantalla
     End Sub
 
+    'Botones que cierran FrmConsultarSaldo y te regresan a FrmOpciones
     Private Sub btnRegresar_Click(sender As Object, e As EventArgs) Handles btnRegresar.Click
         Me.Close()
         frmCajeroOpciones.Show()
@@ -22,7 +23,4 @@
         frmCajeroOpciones.Show()
     End Sub
 
-    Private Sub lblSaldo_Click(sender As Object, e As EventArgs) Handles lblSaldo.Click
-
-    End Sub
 End Class
