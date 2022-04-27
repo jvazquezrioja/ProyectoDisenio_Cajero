@@ -22,29 +22,28 @@ Partial Class frmComprobantes
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.lblPruebaArray = New System.Windows.Forms.Label()
+        Me.lbxComprobantes = New System.Windows.Forms.ListBox()
         Me.SuspendLayout()
         '
-        'lblPruebaArray
+        'lbxComprobantes
         '
-        Me.lblPruebaArray.AutoSize = True
-        Me.lblPruebaArray.Location = New System.Drawing.Point(380, 176)
-        Me.lblPruebaArray.Name = "lblPruebaArray"
-        Me.lblPruebaArray.Size = New System.Drawing.Size(0, 15)
-        Me.lblPruebaArray.TabIndex = 0
+        Me.lbxComprobantes.FormattingEnabled = True
+        Me.lbxComprobantes.ItemHeight = 15
+        Me.lbxComprobantes.Location = New System.Drawing.Point(164, 12)
+        Me.lbxComprobantes.Name = "lbxComprobantes"
+        Me.lbxComprobantes.Size = New System.Drawing.Size(594, 409)
+        Me.lbxComprobantes.TabIndex = 1
         '
         'frmComprobantes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.lblPruebaArray)
+        Me.Controls.Add(Me.lbxComprobantes)
         Me.Name = "frmComprobantes"
         Me.Text = "frmComprobantes"
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents lblPruebaArray As Label
+    Friend WithEvents lbxComprobantes As ListBox
 End Class
