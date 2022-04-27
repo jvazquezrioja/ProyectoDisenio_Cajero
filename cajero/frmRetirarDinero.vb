@@ -8,7 +8,7 @@
         If (frmCajeroAcceso.saldo >= 50) Then
             frmCajeroAcceso.saldo -= 50
             MessageBox.Show("!Exito!")
-            Me.()
+
 
         Else
             MessageBox.Show("No cuentas con suficientes fondos")
@@ -63,5 +63,9 @@
 
     Private Sub btnOtra_Click(sender As Object, e As EventArgs) Handles btnOtra.Click
         frmOtraCantidad.Show()
+    End Sub
+
+    Private Sub btnSalir_Click(sender As Object, e As EventArgs) Handles btnSalir.Click
+        Me.Hide()
     End Sub
 End Class

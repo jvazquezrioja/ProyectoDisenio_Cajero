@@ -5,11 +5,10 @@
     End Sub
 
     Private Sub btnRetirar_Click(sender As Object, e As EventArgs) Handles btnRetirar.Click
-        Dim retiro As Double = Val(tbxSaldoRetirar)
+        Dim retiro As Double = Val(tbxSaldoRetirar.Text)
         If (frmCajeroAcceso.saldo >= retiro) Then
             frmCajeroAcceso.saldo -= retiro
             MessageBox.Show("Exito")
-            Me.Hide()
         Else
             MessageBox.Show("No cuentas con suficientes fondos")
         End If
