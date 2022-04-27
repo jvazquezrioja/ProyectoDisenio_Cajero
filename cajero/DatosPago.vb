@@ -85,20 +85,25 @@
     End Sub
 
     Private Sub BtnContinuar_Click(sender As Object, e As EventArgs) Handles BtnContinuar.Click
-        If (FrmPagoservicio.Servicio.Equals("Internet") And frmCajeroAcceso.saldo >= Double.Parse(TbxCantidad.Text)) Then
-            MsgBox("Se realizo el pago del Internet de compañia " + FrmCompañiasint.Compania + " de numero de referencia " +
+        If (TbxCantidad.Text.Length <> 0 And TbxReferencia.Text.Length <> 0) Then
+            If (FrmPagoservicio.Servicio.Equals("Internet") And frmCajeroAcceso.saldo >= Double.Parse(TbxCantidad.Text)) Then
+                MsgBox("Se realizo el pago del Internet de compañia " + FrmCompañiasint.Compania + " de numero de referencia " +
                    TbxReferencia.Text + " por un total de $" + TbxCantidad.Text, vbOKOnly + vbInformation, "Aviso")
-            frmCajeroAcceso.saldo = frmCajeroAcceso.saldo - Double.Parse(TbxCantidad.Text)
-            Me.Close()
-            frmCajeroOpciones.Show()
-        ElseIf (frmCajeroAcceso.saldo >= Double.Parse(TbxCantidad.Text)) Then
-            MsgBox("Se realizo el pago del servicio de " + FrmPagoservicio.Servicio + " con un numero de referencia " +
+                frmCajeroAcceso.saldo = frmCajeroAcceso.saldo - Double.Parse(TbxCantidad.Text)
+                Me.Close()
+                frmCajeroOpciones.Show()
+            ElseIf (frmCajeroAcceso.saldo >= Double.Parse(TbxCantidad.Text)) Then
+                MsgBox("Se realizo el pago del servicio de " + FrmPagoservicio.Servicio + " con un numero de referencia " +
                    TbxReferencia.Text + " por un total de $" + TbxCantidad.Text, vbOKOnly + vbInformation, "Aviso")
-            frmCajeroAcceso.saldo = frmCajeroAcceso.saldo - Double.Parse(TbxCantidad.Text)
-            Me.Close()
-            frmCajeroOpciones.Show()
+                frmCajeroAcceso.saldo = frmCajeroAcceso.saldo - Double.Parse(TbxCantidad.Text)
+                Me.Close()
+                frmCajeroOpciones.Show()
+            Else
+                MsgBox("Ingrese un valor valido", vbCritical + vbOKOnly, "Error")
+            End If
         Else
             MsgBox("Ingrese un valor valido", vbCritical + vbOKOnly, "Error")
+
         End If
     End Sub
 
