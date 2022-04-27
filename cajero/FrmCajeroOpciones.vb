@@ -8,7 +8,6 @@
             pnlEnglish.Visible = True
         End If
 
-
     End Sub
 
 
@@ -50,7 +49,7 @@
     End Sub
 
     Private Sub btnWithdrawCash_Click(sender As Object, e As EventArgs) Handles btnWithdrawCash.Click
-        'Abre el form de retirar dinero
+        frmRetirarDinero.Show() 'Abre el form de retirar dinero
     End Sub
 
     Private Sub btnTransferMoney_Click(sender As Object, e As EventArgs) Handles btnTransferMoney.Click
@@ -73,4 +72,5 @@
         Me.Close() 'Cierra el menu de opciones
         frmCajeroAcceso.Show() 'Reabre la ventana de acceso del cajero
     End Sub
+
 End Class

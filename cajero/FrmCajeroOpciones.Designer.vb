@@ -78,6 +78,7 @@ Partial Class frmCajeroOpciones
         Me.pnlEspañol.Controls.Add(Me.btnConsultaSaldo)
         Me.pnlEspañol.Controls.Add(Me.lblInstrucción)
         Me.pnlEspañol.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.pnlEspañol.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.pnlEspañol.Location = New System.Drawing.Point(0, 0)
         Me.pnlEspañol.Name = "pnlEspañol"
         Me.pnlEspañol.Size = New System.Drawing.Size(1004, 644)
@@ -131,6 +132,7 @@ Partial Class frmCajeroOpciones
         '
         'btnRetirarDinero
         '
+        Me.btnRetirarDinero.Font = New System.Drawing.Font("Arial Narrow", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.btnRetirarDinero.Location = New System.Drawing.Point(51, 339)
         Me.btnRetirarDinero.Name = "btnRetirarDinero"
         Me.btnRetirarDinero.Size = New System.Drawing.Size(136, 65)
@@ -140,6 +142,7 @@ Partial Class frmCajeroOpciones
         '
         'btnConsultaSaldo
         '
+        Me.btnConsultaSaldo.Font = New System.Drawing.Font("Arial Narrow", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.btnConsultaSaldo.Location = New System.Drawing.Point(51, 237)
         Me.btnConsultaSaldo.Name = "btnConsultaSaldo"
         Me.btnConsultaSaldo.Size = New System.Drawing.Size(136, 65)
@@ -150,9 +153,10 @@ Partial Class frmCajeroOpciones
         'lblInstrucción
         '
         Me.lblInstrucción.AutoSize = True
+        Me.lblInstrucción.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.lblInstrucción.Location = New System.Drawing.Point(408, 310)
         Me.lblInstrucción.Name = "lblInstrucción"
-        Me.lblInstrucción.Size = New System.Drawing.Size(188, 25)
+        Me.lblInstrucción.Size = New System.Drawing.Size(210, 29)
         Me.lblInstrucción.TabIndex = 13
         Me.lblInstrucción.Text = "Selecciona una opción"
         Me.lblInstrucción.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -168,6 +172,7 @@ Partial Class frmCajeroOpciones
         Me.pnlEnglish.Controls.Add(Me.btnCheckBalance)
         Me.pnlEnglish.Controls.Add(Me.lblOptions)
         Me.pnlEnglish.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.pnlEnglish.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.pnlEnglish.Location = New System.Drawing.Point(0, 0)
         Me.pnlEnglish.Name = "pnlEnglish"
         Me.pnlEnglish.Size = New System.Drawing.Size(1004, 644)
@@ -242,7 +247,7 @@ Partial Class frmCajeroOpciones
         Me.lblOptions.AutoSize = True
         Me.lblOptions.Location = New System.Drawing.Point(425, 310)
         Me.lblOptions.Name = "lblOptions"
-        Me.lblOptions.Size = New System.Drawing.Size(154, 25)
+        Me.lblOptions.Size = New System.Drawing.Size(138, 24)
         Me.lblOptions.TabIndex = 13
         Me.lblOptions.Text = "Choose an option"
         Me.lblOptions.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
