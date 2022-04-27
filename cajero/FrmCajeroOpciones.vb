@@ -36,7 +36,7 @@
     End Sub
 
     Private Sub btnGenerarComprobante_Click(sender As Object, e As EventArgs) Handles btnGenerarComprobante.Click
-        'Abre el form de generar comprobante
+        frmComprobantes.Show() 'Abre el form de generar comprobante
     End Sub
 
     Private Sub btnSalir_Click(sender As Object, e As EventArgs) Handles btnSalir.Click

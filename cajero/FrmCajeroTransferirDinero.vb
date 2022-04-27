@@ -14,25 +14,25 @@
     'Son los botones que asignan el valor a la variable global anterior, dependiendo de cual sea presionado, el banco cambia
     Private Sub rbtnBanco1_CheckedChanged(sender As Object, e As EventArgs) Handles rbtnBanco1.CheckedChanged
         If (rbtnBanco1.Checked) Then
-            bancoUsado = "Banco Azteca "
+            bancoUsado = "Banco Azteca"
         End If
     End Sub
 
     Private Sub rbtnBanco2_CheckedChanged(sender As Object, e As EventArgs) Handles rbtnBanco2.CheckedChanged
-        If (rbtnBanco1.Checked) Then
-            bancoUsado = "Banco Santander "
+        If (rbtnBanco2.Checked) Then
+            bancoUsado = "Banco Santander"
         End If
     End Sub
 
     Private Sub rbtnBanco3_CheckedChanged(sender As Object, e As EventArgs) Handles rbtnBanco3.CheckedChanged
-        If (rbtnBanco1.Checked) Then
-            bancoUsado = "Banco citibanamex "
+        If (rbtnBanco3.Checked) Then
+            bancoUsado = "Banco citibanamex"
         End If
     End Sub
 
     Private Sub rbtnBanco4_CheckedChanged(sender As Object, e As EventArgs) Handles rbtnBanco4.CheckedChanged
-        If (rbtnBanco1.Checked) Then
-            bancoUsado = "Banco BBVA "
+        If (rbtnBanco4.Checked) Then
+            bancoUsado = "Banco BBVA"
         End If
     End Sub
 
