@@ -28,7 +28,7 @@
     Private Sub btn100_Click(sender As Object, e As EventArgs) Handles btn100.Click
         If (frmCajeroAcceso.saldo >= 100) Then
             frmCajeroAcceso.saldo -= 100
-            MessageBox.Show("!Exito!") 'hola
+            MessageBox.Show("!Exito!")
 
             Dim saldo As String = Val(frmCajeroAcceso.saldo)
             lblSaldo.Text = "$" + saldo
