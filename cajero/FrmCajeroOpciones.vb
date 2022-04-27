@@ -20,7 +20,7 @@
     End Sub
 
     Private Sub btnRetirarDinero_Click(sender As Object, e As EventArgs) Handles btnRetirarDinero.Click
-        'Abre el form de retirar dinero
+        frmRetirarDinero.Show() 'Abre el form de retirar dinero
     End Sub
 
     Private Sub btnTransferirDinero_Click(sender As Object, e As EventArgs) Handles btnTransferirDinero.Click
