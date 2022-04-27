@@ -9,6 +9,9 @@
         If (frmCajeroAcceso.saldo >= retiro) Then
             frmCajeroAcceso.saldo -= retiro
             MessageBox.Show("Exito")
+
+            Dim saldo As String = Val(frmCajeroAcceso.saldo)
+            lblSaldo.Text = "$" + saldo
         Else
             MessageBox.Show("No cuentas con suficientes fondos")
         End If

@@ -9,7 +9,8 @@
             frmCajeroAcceso.saldo -= 50
             MessageBox.Show("!Exito!")
 
-
+            Dim saldo As String = Val(frmCajeroAcceso.saldo)
+            lblSaldo.Text = "$" + saldo
         Else
             MessageBox.Show("No cuentas con suficientes fondos")
         End If
@@ -19,6 +20,9 @@
         If (frmCajeroAcceso.saldo >= 100) Then
             frmCajeroAcceso.saldo -= 100
             MessageBox.Show("!Exito!")
+
+            Dim saldo As String = Val(frmCajeroAcceso.saldo)
+            lblSaldo.Text = "$" + saldo
         Else
             MessageBox.Show("No cuentas con suficientes fondos")
         End If
@@ -28,6 +32,9 @@
         If (frmCajeroAcceso.saldo >= 200) Then
             frmCajeroAcceso.saldo -= 200
             MessageBox.Show("!Exito!")
+
+            Dim saldo As String = Val(frmCajeroAcceso.saldo)
+            lblSaldo.Text = "$" + saldo
         Else
             MessageBox.Show("No cuentas con suficientes fondos")
         End If
@@ -37,6 +44,9 @@
         If (frmCajeroAcceso.saldo >= 500) Then
             frmCajeroAcceso.saldo -= 500
             MessageBox.Show("!Exito!")
+
+            Dim saldo As String = Val(frmCajeroAcceso.saldo)
+            lblSaldo.Text = "$" + saldo
         Else
             MessageBox.Show("No cuentas con suficientes fondos")
         End If
@@ -46,6 +56,9 @@
         If (frmCajeroAcceso.saldo >= 1000) Then
             frmCajeroAcceso.saldo -= 1000
             MessageBox.Show("!Exito!")
+
+            Dim saldo As String = Val(frmCajeroAcceso.saldo)
+            lblSaldo.Text = "$" + saldo
         Else
             MessageBox.Show("No cuentas con suficientes fondos")
         End If
@@ -56,6 +69,8 @@
             frmCajeroAcceso.saldo -= 1000
             MessageBox.Show("!Exito!")
 
+            Dim saldo As String = Val(frmCajeroAcceso.saldo)
+            lblSaldo.Text = "$" + saldo
         Else
             MessageBox.Show("No cuentas con suficientes fondos")
         End If
