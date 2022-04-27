@@ -27,7 +27,7 @@
     Private Sub setCompania(texto As String)
         Compania = texto
         Me.Hide()
-        FrmDatos.ShowDialog()
+        FrmDatos.Show()
     End Sub
 
 End Class

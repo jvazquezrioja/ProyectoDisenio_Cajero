@@ -33,7 +33,7 @@
 
     Private Sub btnPagarServicios_Click(sender As Object, e As EventArgs) Handles btnPagarServicios.Click
         Me.Hide()
-        FrmPagoservicio.ShowDialog() 'Abre el form de pagar servicios
+        FrmPagoservicio.Show() 'Abre el form de pagar servicios
     End Sub
 
     Private Sub btnGenerarComprobante_Click(sender As Object, e As EventArgs) Handles btnGenerarComprobante.Click
@@ -63,7 +63,7 @@
     End Sub
 
     Private Sub btnPayUtilities_Click(sender As Object, e As EventArgs) Handles btnPayUtilities.Click
-        FrmPagoservicio.ShowDialog() 'Abre el form de pagar servicios
+        FrmPagoservicio.Show() 'Abre el form de pagar servicios
     End Sub
 
     Private Sub btnGenrateReceipt_Click(sender As Object, e As EventArgs) Handles btnGenrateReceipt.Click
