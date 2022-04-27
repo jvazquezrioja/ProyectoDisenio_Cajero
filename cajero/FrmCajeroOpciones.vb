@@ -7,9 +7,12 @@
             pnlEspañol.Visible = False
             pnlEnglish.Visible = True
         End If
+
+        Randomize()
     End Sub
 
-    Public Shared saldo As Double = Int((5000 * Rnd()) + 1) 'Genera un saldo nuevo para cada usuario
+
+    'Public Shared saldo As Double = CInt(Int((5000 * Rnd()) + 100)) 'Genera un saldo nuevo para cada usuario
     Public Shared conjuntoDeOperaciones As ArrayList = New ArrayList() 'Arreglo dinamico Global para generar comprobante
 
     Private Sub btnConsultaSaldo_Click(sender As Object, e As EventArgs) Handles btnConsultaSaldo.Click

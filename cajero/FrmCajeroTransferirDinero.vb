@@ -40,10 +40,10 @@
         If (rbtnBanco1.Checked Or rbtnBanco2.Checked Or rbtnBanco3.Checked Or rbtnBanco4.Checked) Then 'Verifica que un banco este seleccionado
             If (Not (String.IsNullOrEmpty(txtNumeroCuenta.Text))) Then 'Verifica que haya una cuenta
                 Dim cantidadATransferir As Double = Val(txtCantidadTranferir.Text) 'Asigna el valor de la textbox como double
-                If (cantidadATransferir <= frmCajeroOpciones.saldo And cantidadATransferir > 0) Then 'Checa que el valor que quiere transferir el usuario es menor al saldo y que no sea 0 o negativo
+                If (cantidadATransferir <= frmCajeroAcceso.saldo And cantidadATransferir > 0) Then 'Checa que el valor que quiere transferir el usuario es menor al saldo y que no sea 0 o negativo
                     MessageBox.Show("!Exito!") 'mensaje de exito
-                    frmCajeroOpciones.saldo -= cantidadATransferir 'Resta la cantidad de transferencia del saldo
-                    frmCajeroOpciones.conjuntoDeOperaciones.Add("Transferencia a " + bancoUsado + " de cuenta: " + txtNumeroCuenta.Text + " con un monto de: " + txtCantidadTranferir.Text) 'Agrega todo el proceso de transferencia al arreglo para poder generar un comprobante
+                    frmCajeroAcceso.saldo -= cantidadATransferir 'Resta la cantidad de transferencia del saldo
+                    frmCajeroOpciones.conjuntoDeOperaciones.Add("Transferencia a " + bancoUsado + " de cuenta: " + txtNumeroCuenta.Text + " con un monto de: $" + txtCantidadTranferir.Text) 'Agrega todo el proceso de transferencia al arreglo para poder generar un comprobante
                 Else
                     MessageBox.Show("Cantidad no es valida") 'mensaje de error
                 End If
@@ -87,10 +87,10 @@
         If (rbtnBank1.Checked Or rbtnBank2.Checked Or rbtnBank3.Checked Or rbtnBank4.Checked) Then 'Verifica que un banco este seleccionado
             If (Not (String.IsNullOrEmpty(txtAccountNumber.Text))) Then 'Verifica que haya una cuenta
                 Dim cantidadATransferir As Double = Val(txtTransferAmount.Text) 'Asigna el valor de la textbox como double
-                If (cantidadATransferir <= frmCajeroOpciones.saldo And cantidadATransferir > 0) Then 'Checa que el valor que quiere transferir el usuario es menor al saldo y que no sea 0 o negativo
+                If (cantidadATransferir <= frmCajeroAcceso.saldo And cantidadATransferir > 0) Then 'Checa que el valor que quiere transferir el usuario es menor al saldo y que no sea 0 o negativo
                     MessageBox.Show("!Success!") 'mensaje de exito
-                    frmCajeroOpciones.saldo -= cantidadATransferir 'Resta la cantidad de transferencia del saldo
-                    frmCajeroOpciones.conjuntoDeOperaciones.Add("Transfer to " + bancoUsado + " with account number: " + txtAccountNumber.Text + " con un monto de: " + txtTransferAmount.Text) 'Agrega todo el proceso de transferencia al arreglo para poder generar un comprobante
+                    frmCajeroAcceso.saldo -= cantidadATransferir 'Resta la cantidad de transferencia del saldo
+                    frmCajeroOpciones.conjuntoDeOperaciones.Add("Transfer to " + bancoUsado + " with account number: " + txtAccountNumber.Text + " con un monto de: $" + txtTransferAmount.Text) 'Agrega todo el proceso de transferencia al arreglo para poder generar un comprobante
                 Else
                     MessageBox.Show("Amount is not valid") 'mensaje de error
                 End If

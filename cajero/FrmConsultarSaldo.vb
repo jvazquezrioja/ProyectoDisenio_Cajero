@@ -8,7 +8,7 @@
             btnReturn.Visible = True
         End If
 
-        Dim saldo As String = Val(frmCajeroOpciones.saldo)
+        Dim saldo As String = Val(frmCajeroAcceso.saldo)
         lblSaldo.Text = "$" + saldo
     End Sub
 
@@ -22,4 +22,7 @@
         frmCajeroOpciones.Show()
     End Sub
 
+    Private Sub lblSaldo_Click(sender As Object, e As EventArgs) Handles lblSaldo.Click
+
+    End Sub
 End Class

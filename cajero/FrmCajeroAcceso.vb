@@ -1,8 +1,11 @@
 ﻿Public Class frmCajeroAcceso
     Public Shared idioma As Boolean = True  'Sí el valor es true entonces esta en español, false esta en inglés
 
+    Public Shared saldo As Double
+
     Private Sub btnMenuOpciones_Click(sender As Object, e As EventArgs) Handles btnMenuOpciones.Click
         frmCajeroOpciones.Show() 'Abre el siguiente form con las opciones del cajero
+        saldo = CInt(Int((5000 * Rnd()) + 100))
     End Sub
 
     Private Sub cbxIdiomas_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbxIdiomas.SelectedIndexChanged
