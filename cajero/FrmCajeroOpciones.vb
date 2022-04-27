@@ -63,7 +63,7 @@
     End Sub
 
     Private Sub btnPayUtilities_Click(sender As Object, e As EventArgs) Handles btnPayUtilities.Click
-        'Abre el form de pagar servicios
+        FrmPagoservicio.ShowDialog() 'Abre el form de pagar servicios
     End Sub
 
     Private Sub btnGenrateReceipt_Click(sender As Object, e As EventArgs) Handles btnGenrateReceipt.Click
