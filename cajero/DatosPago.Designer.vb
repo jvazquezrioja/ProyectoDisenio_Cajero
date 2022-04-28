@@ -219,6 +219,8 @@ Partial Class frmDatos
         '
         'lblInstrucciones
         '
+        Me.lblInstrucciones.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lblInstrucciones.AutoSize = True
         Me.lblInstrucciones.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.lblInstrucciones.Location = New System.Drawing.Point(403, 18)

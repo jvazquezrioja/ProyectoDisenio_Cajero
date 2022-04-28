@@ -1,5 +1,26 @@
 ﻿Public Class frmDatos
     Dim borrador As Boolean = True 'Variable que determina que textbox esta seleccionado: Referencia es True y Cantidad es False
+    Private Sub frmDatos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        txtCantidad.Text = ""
+        txtReferencia.Text = ""
+
+        If (Not (frmCajeroAcceso.idioma)) Then 'Revisa sí la idioma es false(versión inglés)
+            versionEnIngles()
+        End If
+    End Sub
+
+    Private Sub versionEnIngles() 'Cambia el texto de todos los elementos a su traducción en inglés
+        btnBorrar.Text = "Delete"
+        btnContinuar.Text = "Continue"
+        btnRegresar.Text = "Return"
+
+        lblInstrucciones.Text = "Input the required information"
+        lblInstrucciones.Left = (lblInstrucciones.Parent.Width \ 2) - (lblInstrucciones.Width \ 2) 'Centra horizontalmente el label con el nuevo texto
+
+        gbxCantidad.Text = "Amount"
+        gbxReferencia.Text = "Reference"
+    End Sub
+
     Private Sub btnBorrar_Click(sender As Object, e As EventArgs) Handles btnBorrar.Click 'Dependiendo del textbox seleccionado, el boton borra un caracter a la izquierda de su contenido
         If (borrador.Equals(True)) Then
             If (txtReferencia.Text.Length <> 0) Then
@@ -107,9 +128,6 @@
         End If
     End Sub
 
-    Private Sub frmDatos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        txtCantidad.Text = ""
-        txtReferencia.Text = ""
-    End Sub
+
 
 End Class
