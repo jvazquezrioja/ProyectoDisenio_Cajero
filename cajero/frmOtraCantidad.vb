@@ -26,14 +26,28 @@
             frmCajeroAcceso.saldo -= retiro
             MessageBox.Show("Exito")
 
+
             Dim saldo As String = Val(frmCajeroAcceso.saldo)
             lblCantidadSaldo.Text = "$" + saldo
+            frmRetirarDinero.lblSaldo.Text = "$" + saldo
+            Dim retiroe As String = Val(retiro)
+            If frmCajeroAcceso.idioma Then 'Agrega la operación al ArrayList dependiendo del idioma seleccionado
+                frmCajeroOpciones.conjuntoDeOperaciones.Add("Retiro de efectivo con un monto de $" + retiroe)
+            Else
+                frmCajeroOpciones.conjuntoDeOperaciones.Add("Fund withdrawal: $" + retiroe)
+            End If
         Else
-            MessageBox.Show("No cuentas con suficientes fondos")
+            If frmCajeroAcceso.idioma Then
+                MessageBox.Show("No cuentas con suficientes fondos")
+            Else
+                MessageBox.Show("Not enough funds")
+            End If
+
         End If
     End Sub
 
     Private Sub btnRegresar_Click(sender As Object, e As EventArgs) Handles btnRegresar.Click
+
         Me.Hide()
     End Sub
 
