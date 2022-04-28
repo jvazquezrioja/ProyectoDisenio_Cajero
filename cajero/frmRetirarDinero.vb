@@ -1,187 +1,74 @@
 ﻿Public Class frmRetirarDinero
     Private Sub frmRetirarDinero_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        If frmCajeroAcceso.idioma Then 'Usa la variable global idiomas para detemrinar
-            pnlEspañol.Visible = True  'sí carga el panel con la interfaz en íngles o español
-            pnlEnglish.Visible = False
-        Else
-            pnlEspañol.Visible = False
-            pnlEnglish.Visible = True
+        If (Not (frmCajeroAcceso.idioma)) Then 'Revisa sí la idioma es false(versión inglés)
+            versionEnIngles()
         End If
 
         Dim saldo As String = Val(frmCajeroAcceso.saldo) 'Transformamos el valor double de saldo a string
         lblSaldo.Text = "$" + saldo 'Visualización del saldo en pantalla
-        lblSaldoe.Text = "$" + saldo
+    End Sub
+
+    Private Sub versionEnIngles() 'Cambia el texto de todos los elementos a su traducción en inglés
+        btnOtraCantidad.Text = "Custom Amount"
+        btnRegresar.Text = "Return"
     End Sub
 
     Private Sub btn50_Click(sender As Object, e As EventArgs) Handles btn50.Click
-        If (frmCajeroAcceso.saldo >= 50) Then
-            frmCajeroAcceso.saldo -= 50
-            MessageBox.Show("!Exito!")
-
-            Dim saldo As String = Val(frmCajeroAcceso.saldo)
-            lblSaldo.Text = "$" + saldo
-            frmCajeroOpciones.conjuntoDeOperaciones.Add("Retiro de efectivo con un monto de $50")
-        Else
-            MessageBox.Show("No cuentas con suficientes fondos")
-        End If
+        verificarCantidad(50)
     End Sub
 
     Private Sub btn100_Click(sender As Object, e As EventArgs) Handles btn100.Click
-        If (frmCajeroAcceso.saldo >= 100) Then
-            frmCajeroAcceso.saldo -= 100
-            MessageBox.Show("!Exito!")
-
-            Dim saldo As String = Val(frmCajeroAcceso.saldo)
-            lblSaldo.Text = "$" + saldo
-            frmCajeroOpciones.conjuntoDeOperaciones.Add("Retiro de efectivo con un monto de $100")
-        Else
-            MessageBox.Show("No cuentas con suficientes fondos")
-        End If
+        verificarCantidad(100)
     End Sub
 
     Private Sub btn200_Click(sender As Object, e As EventArgs) Handles btn200.Click
-        If (frmCajeroAcceso.saldo >= 200) Then
-            frmCajeroAcceso.saldo -= 200
-            MessageBox.Show("!Exito!")
-
-            Dim saldo As String = Val(frmCajeroAcceso.saldo)
-            lblSaldo.Text = "$" + saldo
-            frmCajeroOpciones.conjuntoDeOperaciones.Add("Retiro de efectivo con un monto de $200")
-        Else
-            MessageBox.Show("No cuentas con suficientes fondos")
-        End If
+        verificarCantidad(200)
     End Sub
 
     Private Sub btn500_Click(sender As Object, e As EventArgs) Handles btn500.Click
-        If (frmCajeroAcceso.saldo >= 500) Then
-            frmCajeroAcceso.saldo -= 500
-            MessageBox.Show("!Exito!")
-
-            Dim saldo As String = Val(frmCajeroAcceso.saldo)
-            lblSaldo.Text = "$" + saldo
-            frmCajeroOpciones.conjuntoDeOperaciones.Add("Retiro de efectivo con un monto de $500")
-        Else
-            MessageBox.Show("No cuentas con suficientes fondos")
-        End If
+        verificarCantidad(500)
     End Sub
 
     Private Sub btn1000_Click(sender As Object, e As EventArgs) Handles btn1000.Click
-        If (frmCajeroAcceso.saldo >= 1000) Then
-            frmCajeroAcceso.saldo -= 1000
-            MessageBox.Show("!Exito!")
-
-            Dim saldo As String = Val(frmCajeroAcceso.saldo)
-            lblSaldo.Text = "$" + saldo
-            frmCajeroOpciones.conjuntoDeOperaciones.Add("Retiro de efectivo con un monto de $1000")
-        Else
-            MessageBox.Show("No cuentas con suficientes fondos")
-        End If
+        verificarCantidad(1000)
     End Sub
 
     Private Sub btn2500_Click(sender As Object, e As EventArgs) Handles btn2500.Click
-        If (frmCajeroAcceso.saldo >= 1000) Then
-            frmCajeroAcceso.saldo -= 1000
-            MessageBox.Show("!Exito!")
-
-            Dim saldo As String = Val(frmCajeroAcceso.saldo)
-            lblSaldo.Text = "$" + saldo
-            frmCajeroOpciones.conjuntoDeOperaciones.Add("Retiro de efectivo con un monto de $2500")
-        Else
-            MessageBox.Show("No cuentas con suficientes fondos")
-        End If
+        verificarCantidad(2500)
     End Sub
 
-    Private Sub btnOtra_Click(sender As Object, e As EventArgs) Handles btnOtra.Click
+    Private Sub btnOtraCantidad_Click(sender As Object, e As EventArgs) Handles btnOtraCantidad.Click
         frmOtraCantidad.Show()
     End Sub
 
-    Private Sub btnSalir_Click(sender As Object, e As EventArgs) Handles btnRegresar.Click
+    Private Sub btnRegresar_Click(sender As Object, e As EventArgs) Handles btnRegresar.Click
         Me.Hide()
     End Sub
 
-    'Codigo en inglés
-    Private Sub btn50e_Click(sender As Object, e As EventArgs) Handles btn50e.Click
-        If (frmCajeroAcceso.saldo >= 50) Then
-            frmCajeroAcceso.saldo -= 50
-            MessageBox.Show("Success")
+    Private Sub verificarCantidad(cantidad As Double) 'Toma el valor del boton seleccionado, checa que sea menor que el saldo y se lo resta
+        If (frmCajeroAcceso.saldo >= cantidad) Then
+            frmCajeroAcceso.saldo -= cantidad
+            If frmCajeroAcceso.idioma Then
+                MessageBox.Show("!Exito!")
+            Else
+                MessageBox.Show("Success!")
+            End If
 
             Dim saldo As String = Val(frmCajeroAcceso.saldo)
             lblSaldo.Text = "$" + saldo
-            frmCajeroOpciones.conjuntoDeOperaciones.Add("Cash withdrawal in the amount of $50")
+            Dim retiro As String = Val(cantidad)
+            If frmCajeroAcceso.idioma Then 'Agrega la operación al ArrayList dependiendo del idioma seleccionado
+                frmCajeroOpciones.conjuntoDeOperaciones.Add("Retiro de efectivo con un monto de $" + retiro)
+            Else
+                frmCajeroOpciones.conjuntoDeOperaciones.Add("Fund withdrawal: $" + retiro)
+            End If
         Else
-            MessageBox.Show("Not enouch funds")
+            If frmCajeroAcceso.idioma Then
+                MessageBox.Show("No cuentas con suficientes fondos")
+            Else
+                MessageBox.Show("Not enough funds")
+            End If
         End If
     End Sub
 
-    Private Sub btn100e_Click(sender As Object, e As EventArgs) Handles btn100e.Click
-        If (frmCajeroAcceso.saldo >= 100) Then
-            frmCajeroAcceso.saldo -= 100
-            MessageBox.Show("!Exito!")
-
-            Dim saldo As String = Val(frmCajeroAcceso.saldo)
-            lblSaldo.Text = "$" + saldo
-        Else
-            MessageBox.Show("No cuentas con suficientes fondos")
-            frmCajeroOpciones.conjuntoDeOperaciones.Add("Cash withdrawal in the amount of $100")
-        End If
-    End Sub
-
-    Private Sub btn200e_Click(sender As Object, e As EventArgs) Handles btn200e.Click
-        If (frmCajeroAcceso.saldo >= 200) Then
-            frmCajeroAcceso.saldo -= 200
-            MessageBox.Show("!Exito!")
-
-            Dim saldo As String = Val(frmCajeroAcceso.saldo)
-            lblSaldo.Text = "$" + saldo
-            frmCajeroOpciones.conjuntoDeOperaciones.Add("Cash withdrawal in the amount of $200")
-        Else
-            MessageBox.Show("No cuentas con suficientes fondos")
-        End If
-    End Sub
-
-    Private Sub btn500e_Click(sender As Object, e As EventArgs) Handles btn500e.Click
-        If (frmCajeroAcceso.saldo >= 500) Then
-            frmCajeroAcceso.saldo -= 500
-            MessageBox.Show("!Exito!")
-
-            Dim saldo As String = Val(frmCajeroAcceso.saldo)
-            lblSaldo.Text = "$" + saldo
-            frmCajeroOpciones.conjuntoDeOperaciones.Add("Cash withdrawal in the amount of $500")
-        Else
-            MessageBox.Show("No cuentas con suficientes fondos")
-        End If
-    End Sub
-
-    Private Sub btn1000e_Click(sender As Object, e As EventArgs) Handles btn1000e.Click
-        If (frmCajeroAcceso.saldo >= 1000) Then
-            frmCajeroAcceso.saldo -= 1000
-            MessageBox.Show("!Exito!")
-
-            Dim saldo As String = Val(frmCajeroAcceso.saldo)
-            lblSaldo.Text = "$" + saldo
-            frmCajeroOpciones.conjuntoDeOperaciones.Add("Cash withdrawal in the amount of $1000")
-        Else
-            MessageBox.Show("No cuentas con suficientes fondos")
-        End If
-    End Sub
-
-    Private Sub btn2500e_Click(sender As Object, e As EventArgs) Handles btn2500e.Click
-        If (frmCajeroAcceso.saldo >= 1000) Then
-            frmCajeroAcceso.saldo -= 1000
-            MessageBox.Show("!Exito!")
-
-            Dim saldo As String = Val(frmCajeroAcceso.saldo)
-            lblSaldo.Text = "$" + saldo
-            frmCajeroOpciones.conjuntoDeOperaciones.Add("Cash withdrawal in the amount of $2500")
-        Else
-            MessageBox.Show("No cuentas con suficientes fondos")
-        End If
-    End Sub
-
-    Private Sub btnCusttomAmount_Click(sender As Object, e As EventArgs) Handles btnCustomAmount.Click
-        frmOtraCantidad.Show()
-    End Sub
-    Private Sub btnReturn_Click(sender As Object, e As EventArgs) Handles btnReturn.Click
-        Me.Hide()
-    End Sub
 End Class
