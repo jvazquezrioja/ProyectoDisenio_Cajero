@@ -1,6 +1,18 @@
 ﻿Public Class FrmTelefono
     Public valor As Integer 'Valor de recarga seleccionado en el FrmTiempoAire
     Private Sub Form3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        If (Not (frmCajeroAcceso.idioma)) Then 'Revisa sí la idioma es false(versión inglés)
+            versionEnIngles()
+        End If
+    End Sub
+
+    Private Sub versionEnIngles() 'Cambia el texto de todos los elementos a su traducción en inglés
+        BtnRegresar.Text = "Return"
+        BtnBorrar.Text = "Delete"
+        BtnContinuar.Text = "Continue"
+
+        lblInstruccion.Text = "Enter your phone number"
+        lblInstruccion.Left = (lblInstruccion.Parent.Width \ 2) - (lblInstruccion.Width \ 2)
 
     End Sub
 

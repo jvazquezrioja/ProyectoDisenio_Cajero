@@ -24,9 +24,6 @@ Partial Class FrmTelefono
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmTelefono))
         Me.lblInstruccion = New System.Windows.Forms.Label()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.PbxBanco = New System.Windows.Forms.PictureBox()
-        Me.PbxLogo = New System.Windows.Forms.PictureBox()
         Me.TbxNumero = New System.Windows.Forms.TextBox()
         Me.Btn1 = New System.Windows.Forms.Button()
         Me.Btn2 = New System.Windows.Forms.Button()
@@ -41,180 +38,187 @@ Partial Class FrmTelefono
         Me.BtnRegresar = New System.Windows.Forms.Button()
         Me.BtnContinuar = New System.Windows.Forms.Button()
         Me.BtnBorrar = New System.Windows.Forms.Button()
-        Me.Panel1.SuspendLayout()
-        CType(Me.PbxBanco, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PbxLogo, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pbxNombreBanco = New System.Windows.Forms.PictureBox()
+        Me.pbxLogoBanco = New System.Windows.Forms.PictureBox()
+        CType(Me.pbxNombreBanco, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbxLogoBanco, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblInstruccion
         '
         Me.lblInstruccion.AutoSize = True
-        Me.lblInstruccion.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblInstruccion.Location = New System.Drawing.Point(364, 134)
+        Me.lblInstruccion.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.lblInstruccion.Location = New System.Drawing.Point(363, 190)
+        Me.lblInstruccion.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblInstruccion.Name = "lblInstruccion"
-        Me.lblInstruccion.Size = New System.Drawing.Size(272, 28)
+        Me.lblInstruccion.Size = New System.Drawing.Size(278, 29)
         Me.lblInstruccion.TabIndex = 17
         Me.lblInstruccion.Text = "Ingrese Su Numero Telefonico"
         '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.Panel1.Controls.Add(Me.PbxBanco)
-        Me.Panel1.Controls.Add(Me.PbxLogo)
-        Me.Panel1.Location = New System.Drawing.Point(-1, 3)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1052, 128)
-        Me.Panel1.TabIndex = 18
-        '
-        'PbxBanco
-        '
-        Me.PbxBanco.Image = CType(resources.GetObject("PbxBanco.Image"), System.Drawing.Image)
-        Me.PbxBanco.Location = New System.Drawing.Point(174, 9)
-        Me.PbxBanco.Name = "PbxBanco"
-        Me.PbxBanco.Size = New System.Drawing.Size(289, 108)
-        Me.PbxBanco.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PbxBanco.TabIndex = 33
-        Me.PbxBanco.TabStop = False
-        '
-        'PbxLogo
-        '
-        Me.PbxLogo.Image = CType(resources.GetObject("PbxLogo.Image"), System.Drawing.Image)
-        Me.PbxLogo.Location = New System.Drawing.Point(31, 9)
-        Me.PbxLogo.Name = "PbxLogo"
-        Me.PbxLogo.Size = New System.Drawing.Size(147, 108)
-        Me.PbxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PbxLogo.TabIndex = 32
-        Me.PbxLogo.TabStop = False
-        '
         'TbxNumero
         '
-        Me.TbxNumero.Location = New System.Drawing.Point(383, 216)
+        Me.TbxNumero.Location = New System.Drawing.Point(357, 260)
+        Me.TbxNumero.Margin = New System.Windows.Forms.Padding(4)
         Me.TbxNumero.Name = "TbxNumero"
-        Me.TbxNumero.Size = New System.Drawing.Size(240, 27)
+        Me.TbxNumero.Size = New System.Drawing.Size(299, 31)
         Me.TbxNumero.TabIndex = 19
         '
         'Btn1
         '
-        Me.Btn1.Location = New System.Drawing.Point(351, 303)
+        Me.Btn1.Location = New System.Drawing.Point(309, 326)
+        Me.Btn1.Margin = New System.Windows.Forms.Padding(4)
         Me.Btn1.Name = "Btn1"
-        Me.Btn1.Size = New System.Drawing.Size(111, 43)
+        Me.Btn1.Size = New System.Drawing.Size(139, 54)
         Me.Btn1.TabIndex = 20
         Me.Btn1.Text = "1"
         Me.Btn1.UseVisualStyleBackColor = True
         '
         'Btn2
         '
-        Me.Btn2.Location = New System.Drawing.Point(449, 303)
+        Me.Btn2.Location = New System.Drawing.Point(431, 326)
+        Me.Btn2.Margin = New System.Windows.Forms.Padding(4)
         Me.Btn2.Name = "Btn2"
-        Me.Btn2.Size = New System.Drawing.Size(102, 43)
+        Me.Btn2.Size = New System.Drawing.Size(128, 54)
         Me.Btn2.TabIndex = 21
         Me.Btn2.Text = "2"
         Me.Btn2.UseVisualStyleBackColor = True
         '
         'Btn3
         '
-        Me.Btn3.Location = New System.Drawing.Point(549, 303)
+        Me.Btn3.Location = New System.Drawing.Point(556, 326)
+        Me.Btn3.Margin = New System.Windows.Forms.Padding(4)
         Me.Btn3.Name = "Btn3"
-        Me.Btn3.Size = New System.Drawing.Size(111, 43)
+        Me.Btn3.Size = New System.Drawing.Size(139, 54)
         Me.Btn3.TabIndex = 22
         Me.Btn3.Text = "3"
         Me.Btn3.UseVisualStyleBackColor = True
         '
         'Btn4
         '
-        Me.Btn4.Location = New System.Drawing.Point(351, 342)
+        Me.Btn4.Location = New System.Drawing.Point(309, 375)
+        Me.Btn4.Margin = New System.Windows.Forms.Padding(4)
         Me.Btn4.Name = "Btn4"
-        Me.Btn4.Size = New System.Drawing.Size(111, 43)
+        Me.Btn4.Size = New System.Drawing.Size(139, 54)
         Me.Btn4.TabIndex = 23
         Me.Btn4.Text = "4"
         Me.Btn4.UseVisualStyleBackColor = True
         '
         'Btn5
         '
-        Me.Btn5.Location = New System.Drawing.Point(449, 342)
+        Me.Btn5.Location = New System.Drawing.Point(431, 375)
+        Me.Btn5.Margin = New System.Windows.Forms.Padding(4)
         Me.Btn5.Name = "Btn5"
-        Me.Btn5.Size = New System.Drawing.Size(102, 43)
+        Me.Btn5.Size = New System.Drawing.Size(128, 54)
         Me.Btn5.TabIndex = 24
         Me.Btn5.Text = "5"
         Me.Btn5.UseVisualStyleBackColor = True
         '
         'Btn6
         '
-        Me.Btn6.Location = New System.Drawing.Point(549, 342)
+        Me.Btn6.Location = New System.Drawing.Point(556, 375)
+        Me.Btn6.Margin = New System.Windows.Forms.Padding(4)
         Me.Btn6.Name = "Btn6"
-        Me.Btn6.Size = New System.Drawing.Size(111, 43)
+        Me.Btn6.Size = New System.Drawing.Size(139, 54)
         Me.Btn6.TabIndex = 25
         Me.Btn6.Text = "6"
         Me.Btn6.UseVisualStyleBackColor = True
         '
         'Btn7
         '
-        Me.Btn7.Location = New System.Drawing.Point(351, 383)
+        Me.Btn7.Location = New System.Drawing.Point(309, 426)
+        Me.Btn7.Margin = New System.Windows.Forms.Padding(4)
         Me.Btn7.Name = "Btn7"
-        Me.Btn7.Size = New System.Drawing.Size(111, 43)
+        Me.Btn7.Size = New System.Drawing.Size(139, 54)
         Me.Btn7.TabIndex = 26
         Me.Btn7.Text = "7"
         Me.Btn7.UseVisualStyleBackColor = True
         '
         'Btn8
         '
-        Me.Btn8.Location = New System.Drawing.Point(449, 383)
+        Me.Btn8.Location = New System.Drawing.Point(431, 426)
+        Me.Btn8.Margin = New System.Windows.Forms.Padding(4)
         Me.Btn8.Name = "Btn8"
-        Me.Btn8.Size = New System.Drawing.Size(102, 43)
+        Me.Btn8.Size = New System.Drawing.Size(128, 54)
         Me.Btn8.TabIndex = 27
         Me.Btn8.Text = "8"
         Me.Btn8.UseVisualStyleBackColor = True
         '
         'Btn9
         '
-        Me.Btn9.Location = New System.Drawing.Point(549, 383)
+        Me.Btn9.Location = New System.Drawing.Point(556, 426)
+        Me.Btn9.Margin = New System.Windows.Forms.Padding(4)
         Me.Btn9.Name = "Btn9"
-        Me.Btn9.Size = New System.Drawing.Size(111, 43)
+        Me.Btn9.Size = New System.Drawing.Size(139, 54)
         Me.Btn9.TabIndex = 28
         Me.Btn9.Text = "9"
         Me.Btn9.UseVisualStyleBackColor = True
         '
         'Btn0
         '
-        Me.Btn0.Location = New System.Drawing.Point(449, 422)
+        Me.Btn0.Location = New System.Drawing.Point(431, 475)
+        Me.Btn0.Margin = New System.Windows.Forms.Padding(4)
         Me.Btn0.Name = "Btn0"
-        Me.Btn0.Size = New System.Drawing.Size(102, 43)
+        Me.Btn0.Size = New System.Drawing.Size(128, 54)
         Me.Btn0.TabIndex = 29
         Me.Btn0.Text = "0"
         Me.Btn0.UseVisualStyleBackColor = True
         '
         'BtnRegresar
         '
-        Me.BtnRegresar.Location = New System.Drawing.Point(12, 498)
+        Me.BtnRegresar.Location = New System.Drawing.Point(35, 491)
+        Me.BtnRegresar.Margin = New System.Windows.Forms.Padding(4)
         Me.BtnRegresar.Name = "BtnRegresar"
-        Me.BtnRegresar.Size = New System.Drawing.Size(235, 100)
+        Me.BtnRegresar.Size = New System.Drawing.Size(136, 65)
         Me.BtnRegresar.TabIndex = 30
         Me.BtnRegresar.Text = "Regresar"
         Me.BtnRegresar.UseVisualStyleBackColor = True
         '
         'BtnContinuar
         '
-        Me.BtnContinuar.Location = New System.Drawing.Point(803, 498)
+        Me.BtnContinuar.Location = New System.Drawing.Point(818, 517)
+        Me.BtnContinuar.Margin = New System.Windows.Forms.Padding(4)
         Me.BtnContinuar.Name = "BtnContinuar"
-        Me.BtnContinuar.Size = New System.Drawing.Size(235, 100)
+        Me.BtnContinuar.Size = New System.Drawing.Size(136, 65)
         Me.BtnContinuar.TabIndex = 31
         Me.BtnContinuar.Text = "Continuar"
         Me.BtnContinuar.UseVisualStyleBackColor = True
         '
         'BtnBorrar
         '
-        Me.BtnBorrar.Location = New System.Drawing.Point(549, 422)
+        Me.BtnBorrar.Location = New System.Drawing.Point(556, 475)
+        Me.BtnBorrar.Margin = New System.Windows.Forms.Padding(4)
         Me.BtnBorrar.Name = "BtnBorrar"
-        Me.BtnBorrar.Size = New System.Drawing.Size(111, 43)
+        Me.BtnBorrar.Size = New System.Drawing.Size(139, 54)
         Me.BtnBorrar.TabIndex = 32
         Me.BtnBorrar.Text = "Borrar"
         Me.BtnBorrar.UseVisualStyleBackColor = True
         '
+        'pbxNombreBanco
+        '
+        Me.pbxNombreBanco.Image = CType(resources.GetObject("pbxNombreBanco.Image"), System.Drawing.Image)
+        Me.pbxNombreBanco.Location = New System.Drawing.Point(175, 12)
+        Me.pbxNombreBanco.Name = "pbxNombreBanco"
+        Me.pbxNombreBanco.Size = New System.Drawing.Size(606, 154)
+        Me.pbxNombreBanco.TabIndex = 34
+        Me.pbxNombreBanco.TabStop = False
+        '
+        'pbxLogoBanco
+        '
+        Me.pbxLogoBanco.Image = CType(resources.GetObject("pbxLogoBanco.Image"), System.Drawing.Image)
+        Me.pbxLogoBanco.Location = New System.Drawing.Point(12, 12)
+        Me.pbxLogoBanco.Name = "pbxLogoBanco"
+        Me.pbxLogoBanco.Size = New System.Drawing.Size(145, 154)
+        Me.pbxLogoBanco.TabIndex = 33
+        Me.pbxLogoBanco.TabStop = False
+        '
         'FrmTelefono
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1050, 610)
+        Me.BackColor = System.Drawing.Color.White
+        Me.ClientSize = New System.Drawing.Size(1004, 644)
+        Me.Controls.Add(Me.pbxNombreBanco)
+        Me.Controls.Add(Me.pbxLogoBanco)
         Me.Controls.Add(Me.BtnBorrar)
         Me.Controls.Add(Me.BtnContinuar)
         Me.Controls.Add(Me.BtnRegresar)
@@ -230,20 +234,17 @@ Partial Class FrmTelefono
         Me.Controls.Add(Me.Btn1)
         Me.Controls.Add(Me.TbxNumero)
         Me.Controls.Add(Me.lblInstruccion)
-        Me.Controls.Add(Me.Panel1)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "FrmTelefono"
         Me.Text = "Form3"
-        Me.Panel1.ResumeLayout(False)
-        CType(Me.PbxBanco, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PbxLogo, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbxNombreBanco, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbxLogoBanco, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents lblInstruccion As Label
-    Friend WithEvents Panel1 As Panel
     Friend WithEvents TbxNumero As TextBox
     Friend WithEvents Btn1 As Button
     Friend WithEvents Btn2 As Button
@@ -257,7 +258,7 @@ Partial Class FrmTelefono
     Friend WithEvents Btn0 As Button
     Friend WithEvents BtnRegresar As Button
     Friend WithEvents BtnContinuar As Button
-    Friend WithEvents PbxBanco As PictureBox
-    Friend WithEvents PbxLogo As PictureBox
     Friend WithEvents BtnBorrar As Button
+    Friend WithEvents pbxNombreBanco As PictureBox
+    Friend WithEvents pbxLogoBanco As PictureBox
 End Class

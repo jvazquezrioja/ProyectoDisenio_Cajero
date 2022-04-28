@@ -1,6 +1,17 @@
 ﻿Public Class FrmCompañiasint
     Public Compania As String
     Private Sub FrmCompañiasint_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        If (Not (frmCajeroAcceso.idioma)) Then 'Revisa sí la idioma es false(versión inglés)
+            versionEnIngles()
+        End If
+    End Sub
+
+    Private Sub versionEnIngles() 'Cambia el texto de todos los elementos a su traducción en inglés
+        BtnRegresar.Text = "Return"
+
+        LblInstruccion.Text = "Choose your internet provider"
+        LblInstruccion.Left = (LblInstruccion.Parent.Width \ 2) - (LblInstruccion.Width \ 2)
+        LblInstruccion.Top = (LblInstruccion.Parent.Height \ 2) - (LblInstruccion.Height \ 2)
 
     End Sub
 

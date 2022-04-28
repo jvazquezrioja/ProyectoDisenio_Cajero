@@ -1,5 +1,16 @@
 ﻿Public Class FrmCompania
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        If (Not (frmCajeroAcceso.idioma)) Then 'Revisa sí la idioma es false(versión inglés)
+            versionEnIngles()
+        End If
+    End Sub
+
+    Private Sub versionEnIngles() 'Cambia el texto de todos los elementos a su traducción en inglés
+        BtnRegresar.Text = "Return"
+
+        lblInstruccion.Text = "Slect your provider"
+        lblInstruccion.Left = (lblInstruccion.Parent.Width \ 2) - (lblInstruccion.Width \ 2)
+        lblInstruccion.Top = (lblInstruccion.Parent.Height \ 2) - (lblInstruccion.Height \ 2)
 
     End Sub
 

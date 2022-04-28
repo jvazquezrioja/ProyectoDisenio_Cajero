@@ -65,7 +65,7 @@ Partial Class frmConsultarSaldo
         '
         'btnRegresar
         '
-        Me.btnRegresar.Location = New System.Drawing.Point(856, 567)
+        Me.btnRegresar.Location = New System.Drawing.Point(818, 517)
         Me.btnRegresar.Name = "btnRegresar"
         Me.btnRegresar.Size = New System.Drawing.Size(136, 65)
         Me.btnRegresar.TabIndex = 7
@@ -85,7 +85,7 @@ Partial Class frmConsultarSaldo
         '
         'btnReturn
         '
-        Me.btnReturn.Location = New System.Drawing.Point(856, 567)
+        Me.btnReturn.Location = New System.Drawing.Point(0, 0)
         Me.btnReturn.Name = "btnReturn"
         Me.btnReturn.Size = New System.Drawing.Size(136, 65)
         Me.btnReturn.TabIndex = 8
