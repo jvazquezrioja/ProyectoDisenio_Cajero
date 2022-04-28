@@ -32,7 +32,7 @@ Partial Class frmCajeroOpciones
         Me.btnTransferirDinero = New System.Windows.Forms.Button()
         Me.btnRetirarDinero = New System.Windows.Forms.Button()
         Me.btnConsultaSaldo = New System.Windows.Forms.Button()
-        Me.lblInstrucción = New System.Windows.Forms.Label()
+        Me.lblInstruccion = New System.Windows.Forms.Label()
         CType(Me.pbxNombreBanco, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbxLogoBanco, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -120,16 +120,16 @@ Partial Class frmCajeroOpciones
         Me.btnConsultaSaldo.Text = "Consultar Saldo"
         Me.btnConsultaSaldo.UseVisualStyleBackColor = True
         '
-        'lblInstrucción
+        'lblInstruccion
         '
-        Me.lblInstrucción.AutoSize = True
-        Me.lblInstrucción.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblInstrucción.Location = New System.Drawing.Point(397, 308)
-        Me.lblInstrucción.Name = "lblInstrucción"
-        Me.lblInstrucción.Size = New System.Drawing.Size(210, 29)
-        Me.lblInstrucción.TabIndex = 21
-        Me.lblInstrucción.Text = "Selecciona una opción"
-        Me.lblInstrucción.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblInstruccion.AutoSize = True
+        Me.lblInstruccion.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.lblInstruccion.Location = New System.Drawing.Point(397, 308)
+        Me.lblInstruccion.Name = "lblInstruccion"
+        Me.lblInstruccion.Size = New System.Drawing.Size(210, 29)
+        Me.lblInstruccion.TabIndex = 21
+        Me.lblInstruccion.Text = "Selecciona una opción"
+        Me.lblInstruccion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'frmCajeroOpciones
         '
@@ -144,7 +144,7 @@ Partial Class frmCajeroOpciones
         Me.Controls.Add(Me.btnTransferirDinero)
         Me.Controls.Add(Me.btnRetirarDinero)
         Me.Controls.Add(Me.btnConsultaSaldo)
-        Me.Controls.Add(Me.lblInstrucción)
+        Me.Controls.Add(Me.lblInstruccion)
         Me.Controls.Add(Me.pbxNombreBanco)
         Me.Controls.Add(Me.pbxLogoBanco)
         Me.Name = "frmCajeroOpciones"
@@ -165,5 +165,5 @@ Partial Class frmCajeroOpciones
     Friend WithEvents btnTransferirDinero As Button
     Friend WithEvents btnRetirarDinero As Button
     Friend WithEvents btnConsultaSaldo As Button
-    Friend WithEvents lblInstrucción As Label
+    Friend WithEvents lblInstruccion As Label
 End Class

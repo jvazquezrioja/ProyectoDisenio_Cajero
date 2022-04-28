@@ -15,9 +15,9 @@
         btnGenerarComprobante.Text = "Generate Receipt"
         btnSalir.Text = "Exit"
 
-        lblInstrucción.Text = "Choose an option"
-        lblInstrucción.Left = (lblInstrucción.Parent.Width \ 2) - (lblInstrucción.Width \ 2)
-        lblInstrucción.Top = (lblInstrucción.Parent.Height \ 2) - (lblInstrucción.Height \ 2)
+        lblInstruccion.Text = "Choose an option"
+        lblInstruccion.Left = (lblInstruccion.Parent.Width \ 2) - (lblInstruccion.Width \ 2)
+        lblInstruccion.Top = (lblInstruccion.Parent.Height \ 2) - (lblInstruccion.Height \ 2)
 
     End Sub
 
