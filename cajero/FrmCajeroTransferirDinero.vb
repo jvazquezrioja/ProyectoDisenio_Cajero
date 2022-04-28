@@ -45,6 +45,18 @@
         End If
     End Sub
 
+    Private Sub txtNumeroCuenta_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtNumeroCuenta.KeyPress 'Hace que Numero de cuenta solo acepte numeros
+        If Not IsNumeric(e.KeyChar) Then
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub txtCantidadTransferir_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtCantidadTranferir.KeyPress 'Hace que cantidad solo acepte numeros
+        If Not IsNumeric(e.KeyChar) Then
+            e.Handled = True
+        End If
+    End Sub
+
     Private Sub btnTransferir_Click(sender As Object, e As EventArgs) Handles btnTransferir.Click
         If (rbtnBanco1.Checked Or rbtnBanco2.Checked Or rbtnBanco3.Checked Or rbtnBanco4.Checked) Then 'Verifica que un banco este seleccionado
 

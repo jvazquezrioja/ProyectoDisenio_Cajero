@@ -128,13 +128,13 @@
         End If
     End Sub
 
-    Private Sub txtReferencia_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtReferencia.KeyPress
+    Private Sub txtReferencia_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtReferencia.KeyPress 'Hace que Referencia solo acepte numeros
         If Not IsNumeric(e.KeyChar) Then
             e.Handled = True
         End If
     End Sub
 
-    Private Sub txtCantidad_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtCantidad.KeyPress
+    Private Sub txtCantidad_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtCantidad.KeyPress 'Hace que cantidad solo acepte numeros
         If Not IsNumeric(e.KeyChar) Then
             e.Handled = True
         End If
