@@ -44,33 +44,12 @@ Partial Class frmCajeroTransferirDinero
         Me.btnRegresar = New System.Windows.Forms.Button()
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         Me.BackgroundWorker2 = New System.ComponentModel.BackgroundWorker()
-        Me.pnlEnglish = New System.Windows.Forms.Panel()
-        Me.pbxArrow = New System.Windows.Forms.PictureBox()
-        Me.lblFillForm = New System.Windows.Forms.Label()
-        Me.pnlBanks = New System.Windows.Forms.Panel()
-        Me.rbtnBank4 = New System.Windows.Forms.RadioButton()
-        Me.rbtnBank3 = New System.Windows.Forms.RadioButton()
-        Me.rbtnBank2 = New System.Windows.Forms.RadioButton()
-        Me.rbtnBank1 = New System.Windows.Forms.RadioButton()
-        Me.pnlTransfer = New System.Windows.Forms.Panel()
-        Me.txtTransferAmount = New System.Windows.Forms.TextBox()
-        Me.btnTransfer = New System.Windows.Forms.Button()
-        Me.lblAccountNumber = New System.Windows.Forms.Label()
-        Me.lblTransferAmount = New System.Windows.Forms.Label()
-        Me.txtAccountNumber = New System.Windows.Forms.TextBox()
-        Me.lblChooseBank = New System.Windows.Forms.Label()
-        Me.lblTransferFunds = New System.Windows.Forms.Label()
-        Me.btnReturn = New System.Windows.Forms.Button()
         CType(Me.pbxNombreBanco, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbxLogoBanco, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlEspañol.SuspendLayout()
         CType(Me.pbxFlecha, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlBancos.SuspendLayout()
         Me.pnlTransferencia.SuspendLayout()
-        Me.pnlEnglish.SuspendLayout()
-        CType(Me.pbxArrow, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.pnlBanks.SuspendLayout()
-        Me.pnlTransfer.SuspendLayout()
         Me.SuspendLayout()
         '
         'pbxNombreBanco
@@ -269,184 +248,6 @@ Partial Class frmCajeroTransferirDinero
         Me.btnRegresar.Text = "Regresar"
         Me.btnRegresar.UseVisualStyleBackColor = True
         '
-        'pnlEnglish
-        '
-        Me.pnlEnglish.Controls.Add(Me.pbxArrow)
-        Me.pnlEnglish.Controls.Add(Me.lblFillForm)
-        Me.pnlEnglish.Controls.Add(Me.pnlBanks)
-        Me.pnlEnglish.Controls.Add(Me.pnlTransfer)
-        Me.pnlEnglish.Controls.Add(Me.lblChooseBank)
-        Me.pnlEnglish.Controls.Add(Me.lblTransferFunds)
-        Me.pnlEnglish.Controls.Add(Me.btnReturn)
-        Me.pnlEnglish.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pnlEnglish.Location = New System.Drawing.Point(0, 0)
-        Me.pnlEnglish.Name = "pnlEnglish"
-        Me.pnlEnglish.Size = New System.Drawing.Size(1004, 644)
-        Me.pnlEnglish.TabIndex = 10
-        '
-        'pbxArrow
-        '
-        Me.pbxArrow.Image = CType(resources.GetObject("pbxArrow.Image"), System.Drawing.Image)
-        Me.pbxArrow.Location = New System.Drawing.Point(424, 334)
-        Me.pbxArrow.Name = "pbxArrow"
-        Me.pbxArrow.Size = New System.Drawing.Size(177, 136)
-        Me.pbxArrow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.pbxArrow.TabIndex = 42
-        Me.pbxArrow.TabStop = False
-        '
-        'lblFillForm
-        '
-        Me.lblFillForm.BackColor = System.Drawing.Color.White
-        Me.lblFillForm.Font = New System.Drawing.Font("Arial", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblFillForm.Location = New System.Drawing.Point(649, 205)
-        Me.lblFillForm.Name = "lblFillForm"
-        Me.lblFillForm.Size = New System.Drawing.Size(302, 47)
-        Me.lblFillForm.TabIndex = 41
-        Me.lblFillForm.Text = "Fill out the form"
-        Me.lblFillForm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'pnlBanks
-        '
-        Me.pnlBanks.Controls.Add(Me.rbtnBank4)
-        Me.pnlBanks.Controls.Add(Me.rbtnBank3)
-        Me.pnlBanks.Controls.Add(Me.rbtnBank2)
-        Me.pnlBanks.Controls.Add(Me.rbtnBank1)
-        Me.pnlBanks.Location = New System.Drawing.Point(51, 252)
-        Me.pnlBanks.Name = "pnlBanks"
-        Me.pnlBanks.Size = New System.Drawing.Size(324, 309)
-        Me.pnlBanks.TabIndex = 40
-        '
-        'rbtnBank4
-        '
-        Me.rbtnBank4.BackgroundImage = CType(resources.GetObject("rbtnBank4.BackgroundImage"), System.Drawing.Image)
-        Me.rbtnBank4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.rbtnBank4.Location = New System.Drawing.Point(27, 240)
-        Me.rbtnBank4.Name = "rbtnBank4"
-        Me.rbtnBank4.Size = New System.Drawing.Size(284, 64)
-        Me.rbtnBank4.TabIndex = 43
-        Me.rbtnBank4.TabStop = True
-        Me.rbtnBank4.UseVisualStyleBackColor = True
-        '
-        'rbtnBank3
-        '
-        Me.rbtnBank3.BackgroundImage = CType(resources.GetObject("rbtnBank3.BackgroundImage"), System.Drawing.Image)
-        Me.rbtnBank3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.rbtnBank3.Location = New System.Drawing.Point(27, 161)
-        Me.rbtnBank3.Name = "rbtnBank3"
-        Me.rbtnBank3.Size = New System.Drawing.Size(284, 64)
-        Me.rbtnBank3.TabIndex = 42
-        Me.rbtnBank3.TabStop = True
-        Me.rbtnBank3.UseVisualStyleBackColor = True
-        '
-        'rbtnBank2
-        '
-        Me.rbtnBank2.BackgroundImage = CType(resources.GetObject("rbtnBank2.BackgroundImage"), System.Drawing.Image)
-        Me.rbtnBank2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.rbtnBank2.Location = New System.Drawing.Point(27, 82)
-        Me.rbtnBank2.Name = "rbtnBank2"
-        Me.rbtnBank2.Size = New System.Drawing.Size(284, 64)
-        Me.rbtnBank2.TabIndex = 41
-        Me.rbtnBank2.TabStop = True
-        Me.rbtnBank2.UseVisualStyleBackColor = True
-        '
-        'rbtnBank1
-        '
-        Me.rbtnBank1.BackgroundImage = CType(resources.GetObject("rbtnBank1.BackgroundImage"), System.Drawing.Image)
-        Me.rbtnBank1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.rbtnBank1.Location = New System.Drawing.Point(27, 3)
-        Me.rbtnBank1.Name = "rbtnBank1"
-        Me.rbtnBank1.Size = New System.Drawing.Size(284, 64)
-        Me.rbtnBank1.TabIndex = 40
-        Me.rbtnBank1.TabStop = True
-        Me.rbtnBank1.UseVisualStyleBackColor = True
-        '
-        'pnlTransfer
-        '
-        Me.pnlTransfer.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.pnlTransfer.Controls.Add(Me.txtTransferAmount)
-        Me.pnlTransfer.Controls.Add(Me.btnTransfer)
-        Me.pnlTransfer.Controls.Add(Me.lblAccountNumber)
-        Me.pnlTransfer.Controls.Add(Me.lblTransferAmount)
-        Me.pnlTransfer.Controls.Add(Me.txtAccountNumber)
-        Me.pnlTransfer.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.pnlTransfer.Location = New System.Drawing.Point(651, 255)
-        Me.pnlTransfer.Name = "pnlTransfer"
-        Me.pnlTransfer.Size = New System.Drawing.Size(300, 309)
-        Me.pnlTransfer.TabIndex = 39
-        '
-        'txtTransferAmount
-        '
-        Me.txtTransferAmount.Location = New System.Drawing.Point(73, 146)
-        Me.txtTransferAmount.Name = "txtTransferAmount"
-        Me.txtTransferAmount.Size = New System.Drawing.Size(136, 35)
-        Me.txtTransferAmount.TabIndex = 29
-        '
-        'btnTransfer
-        '
-        Me.btnTransfer.Location = New System.Drawing.Point(73, 212)
-        Me.btnTransfer.Name = "btnTransfer"
-        Me.btnTransfer.Size = New System.Drawing.Size(136, 65)
-        Me.btnTransfer.TabIndex = 30
-        Me.btnTransfer.Text = "Transfer"
-        Me.btnTransfer.UseVisualStyleBackColor = True
-        '
-        'lblAccountNumber
-        '
-        Me.lblAccountNumber.AutoSize = True
-        Me.lblAccountNumber.Location = New System.Drawing.Point(34, 26)
-        Me.lblAccountNumber.Name = "lblAccountNumber"
-        Me.lblAccountNumber.Size = New System.Drawing.Size(215, 29)
-        Me.lblAccountNumber.TabIndex = 26
-        Me.lblAccountNumber.Text = "7 Digit Account number"
-        '
-        'lblTransferAmount
-        '
-        Me.lblTransferAmount.AutoSize = True
-        Me.lblTransferAmount.Location = New System.Drawing.Point(53, 108)
-        Me.lblTransferAmount.Name = "lblTransferAmount"
-        Me.lblTransferAmount.Size = New System.Drawing.Size(174, 29)
-        Me.lblTransferAmount.TabIndex = 28
-        Me.lblTransferAmount.Text = "Amount to transfer"
-        '
-        'txtAccountNumber
-        '
-        Me.txtAccountNumber.Location = New System.Drawing.Point(73, 64)
-        Me.txtAccountNumber.Name = "txtAccountNumber"
-        Me.txtAccountNumber.Size = New System.Drawing.Size(136, 35)
-        Me.txtAccountNumber.TabIndex = 27
-        '
-        'lblChooseBank
-        '
-        Me.lblChooseBank.BackColor = System.Drawing.Color.White
-        Me.lblChooseBank.Font = New System.Drawing.Font("Arial", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblChooseBank.Location = New System.Drawing.Point(60, 202)
-        Me.lblChooseBank.Name = "lblChooseBank"
-        Me.lblChooseBank.Size = New System.Drawing.Size(302, 47)
-        Me.lblChooseBank.TabIndex = 33
-        Me.lblChooseBank.Text = "Choose a bank"
-        Me.lblChooseBank.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblTransferFunds
-        '
-        Me.lblTransferFunds.AutoSize = True
-        Me.lblTransferFunds.BackColor = System.Drawing.Color.White
-        Me.lblTransferFunds.Font = New System.Drawing.Font("Arial", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.lblTransferFunds.Location = New System.Drawing.Point(378, 173)
-        Me.lblTransferFunds.Name = "lblTransferFunds"
-        Me.lblTransferFunds.Size = New System.Drawing.Size(249, 37)
-        Me.lblTransferFunds.TabIndex = 31
-        Me.lblTransferFunds.Text = "Transfer Funds"
-        '
-        'btnReturn
-        '
-        Me.btnReturn.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.btnReturn.Location = New System.Drawing.Point(724, 567)
-        Me.btnReturn.Name = "btnReturn"
-        Me.btnReturn.Size = New System.Drawing.Size(136, 67)
-        Me.btnReturn.TabIndex = 21
-        Me.btnReturn.Text = "Return"
-        Me.btnReturn.UseVisualStyleBackColor = True
-        '
         'frmCajeroTransferirDinero
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 25.0!)
@@ -456,7 +257,6 @@ Partial Class frmCajeroTransferirDinero
         Me.Controls.Add(Me.pbxNombreBanco)
         Me.Controls.Add(Me.pbxLogoBanco)
         Me.Controls.Add(Me.pnlEspañol)
-        Me.Controls.Add(Me.pnlEnglish)
         Me.Name = "frmCajeroTransferirDinero"
         Me.Text = "Transferencias"
         CType(Me.pbxNombreBanco, System.ComponentModel.ISupportInitialize).EndInit()
@@ -467,12 +267,6 @@ Partial Class frmCajeroTransferirDinero
         Me.pnlBancos.ResumeLayout(False)
         Me.pnlTransferencia.ResumeLayout(False)
         Me.pnlTransferencia.PerformLayout()
-        Me.pnlEnglish.ResumeLayout(False)
-        Me.pnlEnglish.PerformLayout()
-        CType(Me.pbxArrow, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.pnlBanks.ResumeLayout(False)
-        Me.pnlTransfer.ResumeLayout(False)
-        Me.pnlTransfer.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -498,21 +292,4 @@ Partial Class frmCajeroTransferirDinero
     Friend WithEvents rbtnBanco4 As RadioButton
     Friend WithEvents pbxFlecha As PictureBox
     Friend WithEvents lblLlenaDatos As Label
-    Friend WithEvents pnlEnglish As Panel
-    Friend WithEvents pbxArrow As PictureBox
-    Friend WithEvents lblFillForm As Label
-    Friend WithEvents pnlBanks As Panel
-    Friend WithEvents rbtnBank4 As RadioButton
-    Friend WithEvents rbtnBank3 As RadioButton
-    Friend WithEvents rbtnBank2 As RadioButton
-    Friend WithEvents rbtnBank1 As RadioButton
-    Friend WithEvents pnlTransfer As Panel
-    Friend WithEvents txtTransferAmount As TextBox
-    Friend WithEvents btnTransfer As Button
-    Friend WithEvents lblAccountNumber As Label
-    Friend WithEvents lblTransferAmount As Label
-    Friend WithEvents txtAccountNumber As TextBox
-    Friend WithEvents lblChooseBank As Label
-    Friend WithEvents lblTransferFunds As Label
-    Friend WithEvents btnReturn As Button
 End Class
