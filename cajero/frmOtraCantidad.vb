@@ -22,28 +22,34 @@
 
     Private Sub btnRetirar_Click(sender As Object, e As EventArgs) Handles btnRetirar.Click
         Dim retiro As Double = Val(txtSaldoRetirar.Text)
-        If (frmCajeroAcceso.saldo >= retiro) Then
-            frmCajeroAcceso.saldo -= retiro
-            MessageBox.Show("Exito")
+        If retiro Mod 200 = 0 Then
+            If (frmCajeroAcceso.saldo >= retiro) Then
+                frmCajeroAcceso.saldo -= retiro
+                MessageBox.Show("Exito")
 
 
-            Dim saldo As String = Val(frmCajeroAcceso.saldo)
-            lblCantidadSaldo.Text = "$" + saldo
-            frmRetirarDinero.lblSaldo.Text = "$" + saldo
-            Dim retiroe As String = Val(retiro)
-            If frmCajeroAcceso.idioma Then 'Agrega la operación al ArrayList dependiendo del idioma seleccionado
-                frmCajeroOpciones.conjuntoDeOperaciones.Add("Retiro de efectivo con un monto de $" + retiroe)
+                Dim saldo As String = Val(frmCajeroAcceso.saldo)
+                lblCantidadSaldo.Text = "$" + saldo
+                frmRetirarDinero.lblSaldo.Text = "$" + saldo
+                txtSaldoRetirar.Clear()
+
+                If frmCajeroAcceso.idioma Then 'Agrega la operación al ArrayList dependiendo del idioma seleccionado
+                    frmCajeroOpciones.conjuntoDeOperaciones.Add("Retiro de efectivo con un monto de $" + retiro.ToString)
+                Else
+                    frmCajeroOpciones.conjuntoDeOperaciones.Add("Fund withdrawal: $" + retiro.ToString)
+                End If
             Else
-                frmCajeroOpciones.conjuntoDeOperaciones.Add("Fund withdrawal: $" + retiroe)
+                If frmCajeroAcceso.idioma Then
+                    MessageBox.Show("No cuentas con suficientes fondos")
+                Else
+                    MessageBox.Show("Not enough funds")
+                End If
+
             End If
         Else
-            If frmCajeroAcceso.idioma Then
-                MessageBox.Show("No cuentas con suficientes fondos")
-            Else
-                MessageBox.Show("Not enough funds")
-            End If
-
+            MessageBox.Show("Cantidad Invalida")
         End If
+
     End Sub
 
     Private Sub btnRegresar_Click(sender As Object, e As EventArgs) Handles btnRegresar.Click
