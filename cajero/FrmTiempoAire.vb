@@ -10,7 +10,7 @@
     End Sub
 
     Private Sub versionEnIngles() 'Cambia el texto de todos los elementos a su traducción en inglés
-        BtnRegresar.Text = "Return"
+        BtnRegresar.Text = "Return" 'aloooooooo
 
         lblInstruccion.Text = "Choose the payment amount for " + compania
         lblInstruccion.Left = (lblInstruccion.Parent.Width \ 2) - (lblInstruccion.Width \ 2)
