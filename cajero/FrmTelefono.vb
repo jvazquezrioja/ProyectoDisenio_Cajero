@@ -69,15 +69,23 @@
 
     Private Sub BtnContinuar_Click(sender As Object, e As EventArgs) Handles BtnContinuar.Click
         If (TbxNumero.Text = "" Or TbxNumero.Text.Count <> 10 Or frmCajeroAcceso.saldo < valor) Then 'Revisa si el textbox no esta vacio y si tiene 10 digitos, ademas de ver que se pueda pagar
-            MsgBox("Ingrese un numero valido", MsgBoxStyle.OkOnly + MsgBoxStyle.Critical, "Aviso") 'Avisa que algo esta mal en los datos
+            If frmCajeroAcceso.idioma Then
+                MsgBox("Ingrese un numero valido", MsgBoxStyle.OkOnly + MsgBoxStyle.Critical, "Aviso") 'Avisa que algo esta mal en los datos
+            Else
+                MsgBox("Enter a valid number", MsgBoxStyle.OkOnly + MsgBoxStyle.Critical, "Warning")
+            End If
         Else
-            MsgBox("Se realizo la recarga de la compañia " + FrmTiempoAire.compania + " de un valor de " + valor.ToString + " al numero de " + TbxNumero.Text, MsgBoxStyle.OkOnly + MsgBoxStyle.Information, "Aviso") 'Imprime que se logro hacer la transaccion
+            If frmCajeroAcceso.idioma Then
+                MsgBox("Se realizo la recarga de la compañia " + frmTiempoAire.compania + " de un valor de " + valor.ToString + " al numero de " + TbxNumero.Text, MsgBoxStyle.OkOnly + MsgBoxStyle.Information, "Aviso") 'Imprime que se logro hacer la transaccion
+            Else
+                MsgBox("The transaction was succesful! Company: " + frmTiempoAire.compania + " with an amount of " + valor.ToString + " to the phone number " + TbxNumero.Text, MsgBoxStyle.OkOnly + MsgBoxStyle.Information, "Update") 'Imprime que se logro hacer la transaccion
+            End If
             frmCajeroAcceso.saldo = frmCajeroAcceso.saldo - valor 'Cambia la variable de saldo
-            FrmCompania.Dispose() 'Descarga el form de compañia
-            FrmTiempoAire.Dispose() 'Descarga el form de tiempo aire
-            Me.Close() 'Se cierra este form
-            frmCajeroAcceso.Show() 'Abre el menu de opciones
-        End If
+                FrmCompania.Dispose() 'Descarga el form de compañia
+                frmTiempoAire.Dispose() 'Descarga el form de tiempo aire
+                Me.Close() 'Se cierra este form
+                frmCajeroAcceso.Show() 'Abre el menu de opciones
+            End If
 
     End Sub
 
