@@ -31,7 +31,7 @@ Partial Class frmOtraCantidad
         Me.pbxLogoBanco = New System.Windows.Forms.PictureBox()
         Me.lblSaldo = New System.Windows.Forms.Label()
         Me.lblSaldoRetirar = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblCashAmount = New System.Windows.Forms.Label()
         CType(Me.pbxNombreBanco, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbxLogoBanco, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -80,7 +80,7 @@ Partial Class frmOtraCantidad
         '
         Me.pbxNombreBanco.Image = CType(resources.GetObject("pbxNombreBanco.Image"), System.Drawing.Image)
         Me.pbxNombreBanco.Location = New System.Drawing.Point(122, 7)
-        Me.pbxNombreBanco.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.pbxNombreBanco.Margin = New System.Windows.Forms.Padding(2)
         Me.pbxNombreBanco.Name = "pbxNombreBanco"
         Me.pbxNombreBanco.Size = New System.Drawing.Size(424, 92)
         Me.pbxNombreBanco.TabIndex = 12
@@ -90,7 +90,7 @@ Partial Class frmOtraCantidad
         '
         Me.pbxLogoBanco.Image = CType(resources.GetObject("pbxLogoBanco.Image"), System.Drawing.Image)
         Me.pbxLogoBanco.Location = New System.Drawing.Point(8, 7)
-        Me.pbxLogoBanco.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.pbxLogoBanco.Margin = New System.Windows.Forms.Padding(2)
         Me.pbxLogoBanco.Name = "pbxLogoBanco"
         Me.pbxLogoBanco.Size = New System.Drawing.Size(102, 92)
         Me.pbxLogoBanco.TabIndex = 11
@@ -118,14 +118,14 @@ Partial Class frmOtraCantidad
         Me.lblSaldoRetirar.TabIndex = 14
         Me.lblSaldoRetirar.Text = "Cantidad a retirar"
         '
-        'Label1
+        'lblCashAmount
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(71, 265)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(348, 15)
-        Me.Label1.TabIndex = 15
-        Me.Label1.Text = "Solo puede retirar efectivo en multiplos de $200 (Maximo $5,000)"
+        Me.lblCashAmount.AutoSize = True
+        Me.lblCashAmount.Location = New System.Drawing.Point(71, 265)
+        Me.lblCashAmount.Name = "lblCashAmount"
+        Me.lblCashAmount.Size = New System.Drawing.Size(348, 15)
+        Me.lblCashAmount.TabIndex = 15
+        Me.lblCashAmount.Text = "Solo puede retirar efectivo en multiplos de $200 (Maximo $5,000)"
         '
         'frmOtraCantidad
         '
@@ -133,7 +133,7 @@ Partial Class frmOtraCantidad
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(703, 386)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.lblCashAmount)
         Me.Controls.Add(Me.lblSaldoRetirar)
         Me.Controls.Add(Me.lblSaldo)
         Me.Controls.Add(Me.lblCantidadSaldo)
@@ -159,5 +159,5 @@ Partial Class frmOtraCantidad
     Friend WithEvents pbxLogoBanco As PictureBox
     Friend WithEvents lblSaldo As Label
     Friend WithEvents lblSaldoRetirar As Label
-    Friend WithEvents Label1 As Label
+    Friend WithEvents lblCashAmount As Label
 End Class

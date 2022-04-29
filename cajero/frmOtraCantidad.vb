@@ -16,6 +16,7 @@
         lblSaldo.Left = (lblSaldo.Parent.Width \ 2) - (lblSaldo.Width \ 2) 'Centra horizontalmente el label con el nuevo texto
         lblSaldoRetirar.Text = "Withdrawal amount"
         lblSaldo.Text = "Balance"
+        lblCashAmount.Text = "You can only withdrawal cash in multiples of $200 (Maximum $5,000)"
         lblSaldoRetirar.Left = (lblSaldoRetirar.Parent.Width \ 2) - (lblSaldoRetirar.Width \ 2)
 
     End Sub
@@ -25,7 +26,12 @@
         If retiro Mod 200 = 0 Then
             If (frmCajeroAcceso.saldo >= retiro) Then
                 frmCajeroAcceso.saldo -= retiro
-                MessageBox.Show("Exito")
+
+                If frmCajeroAcceso.idioma Then
+                    MessageBox.Show("Exito!")
+                Else
+                    MessageBox.Show("Success!")
+                End If
 
 
                 Dim saldo As String = Val(frmCajeroAcceso.saldo)

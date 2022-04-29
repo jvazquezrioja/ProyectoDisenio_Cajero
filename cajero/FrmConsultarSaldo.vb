@@ -1,6 +1,7 @@
 ﻿Public Class frmConsultarSaldo
     Private Sub frmCajeroSaldo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If frmCajeroAcceso.idioma Then 'Usa la variable global idiomas para detemrinar
+        Else
             versionEnIngles()
         End If
         Dim saldo As String = Val(frmCajeroAcceso.saldo) 'Transformamos el valor double de saldo a string
