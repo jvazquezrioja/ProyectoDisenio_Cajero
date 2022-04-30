@@ -1,7 +1,7 @@
 ﻿Public Class FrmTelefono
     Public valor As Integer 'Valor de recarga seleccionado en el FrmTiempoAire
     Private Sub Form3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        If (Not (FrmAcceso.idioma)) Then 'Revisa sí la idioma es false(versión inglés)
+        If Not FrmAcceso.idioma Then 'Revisa sí la idioma es false(versión inglés)
             versionEnIngles()
         End If
     End Sub
@@ -77,11 +77,13 @@
         Else
             If FrmAcceso.idioma Then
                 MsgBox("Se realizo la recarga de la compañia " + frmTiempoAire.compania + " de un valor de " + valor.ToString + " al numero de " + TbxNumero.Text, MsgBoxStyle.OkOnly + MsgBoxStyle.Information, "Aviso") 'Imprime que se logro hacer la transaccion
+                FrmOpciones.conjuntoDeOperaciones.Add("Recarga de la compañia " + frmTiempoAire.compania + " de un valor de " + valor.ToString + " al numero de " + TbxNumero.Text)
             Else
-                MsgBox("The transaction was succesful! Company: " + frmTiempoAire.compania + " with an amount of " + valor.ToString + " to the phone number " + TbxNumero.Text, MsgBoxStyle.OkOnly + MsgBoxStyle.Information, "Update") 'Imprime que se logro hacer la transaccion
+                MsgBox("The recharge to " + frmTiempoAire.compania + " company with an amount of " + valor.ToString + " to the phone number " + TbxNumero.Text + " was succesful!", MsgBoxStyle.OkOnly + MsgBoxStyle.Information, "Update") 'Imprime que se logro hacer la transaccion
+                FrmOpciones.conjuntoDeOperaciones.Add("Recharge to " + frmTiempoAire.compania + " company with an amount of " + valor.ToString + " to the phone number " + TbxNumero.Text)
             End If
             FrmAcceso.saldo = FrmAcceso.saldo - valor 'Cambia la variable de saldo
-                FrmCompania.Dispose() 'Descarga el form de compañia
+            FrmCompania.Dispose() 'Descarga el form de compañia
                 frmTiempoAire.Dispose() 'Descarga el form de tiempo aire
                 Me.Close() 'Se cierra este form
             FrmAcceso.Show() 'Abre el menu de opciones

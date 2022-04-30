@@ -2,7 +2,7 @@
     Public compania As String 'La compañia seleccionada en el FrmCompañia
 
     Private Sub tiempoAire_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        If (Not (FrmAcceso.idioma)) Then 'Revisa sí la idioma es false(versión inglés)
+        If Not FrmAcceso.idioma Then 'Revisa sí la idioma es false(versión inglés)
             versionEnIngles()
         Else
             lblInstruccion.Text = "Seleccione la recarga que desea de la compañia " + compania 'Pone el texto de lblInstrucciones con la compañia seleccioanda

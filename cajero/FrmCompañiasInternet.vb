@@ -1,7 +1,7 @@
 ﻿Public Class FrmFrmCompañiasInt
     Public Compania As String
     Private Sub FrmFrmCompañiasInt_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        If (Not (FrmAcceso.idioma)) Then 'Revisa sí la idioma es false(versión inglés)
+        If Not FrmAcceso.idioma Then 'Revisa sí la idioma es false(versión inglés)
             versionEnIngles()
         End If
     End Sub

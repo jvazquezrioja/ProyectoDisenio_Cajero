@@ -3,7 +3,7 @@
         Dim saldo As String = Val(FrmAcceso.saldo) 'Transformamos el valor double de saldo a string
         lblCantidadSaldo.Text = "$" + saldo 'Visualización del saldo en pantalla
 
-        If (Not (FrmAcceso.idioma)) Then 'Revisa sí la idioma es false(versión inglés)
+        If Not FrmAcceso.idioma Then 'Revisa sí la idioma es false(versión inglés)
             versionEnIngles()
         End If
     End Sub
@@ -26,15 +26,12 @@
             FrmAcceso.saldo -= retiro
             MessageBox.Show("Exito")
 
-
-            Dim saldo As String = Val(FrmAcceso.saldo)
-            lblCantidadSaldo.Text = "$" + saldo
-            frmRetirarDinero.lblSaldo.Text = "$" + saldo
-            Dim retiroe As String = Val(retiro)
+            lblCantidadSaldo.Text = "$" + FrmAcceso.saldo.ToString
+            frmRetirarDinero.lblSaldo.Text = "$" + FrmAcceso.saldo.ToString
             If FrmAcceso.idioma Then 'Agrega la operación al ArrayList dependiendo del idioma seleccionado
-                FrmOpciones.conjuntoDeOperaciones.Add("Retiro de efectivo con un monto de $" + retiroe)
+                FrmOpciones.conjuntoDeOperaciones.Add("Retiro de efectivo con un monto de $" + retiro.ToString)
             Else
-                FrmOpciones.conjuntoDeOperaciones.Add("Fund withdrawal: $" + retiroe)
+                FrmOpciones.conjuntoDeOperaciones.Add("Fund withdrawal: $" + retiro.ToString)
             End If
         Else
             If FrmAcceso.idioma Then
@@ -47,7 +44,6 @@
     End Sub
 
     Private Sub btnRegresar_Click(sender As Object, e As EventArgs) Handles btnRegresar.Click
-
         Me.Hide()
     End Sub
 
