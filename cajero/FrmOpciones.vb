@@ -1,6 +1,6 @@
-﻿Public Class frmCajeroOpciones
-    Private Sub frmCajeroOpciones_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        If (Not (frmCajeroAcceso.idioma)) Then 'Revisa sí la idioma es false(versión inglés)
+﻿Public Class FrmOpciones
+    Private Sub FrmOpciones_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        If Not FrmAcceso.idioma Then 'Revisa sí la idioma es false(versión inglés)
             versionEnIngles()
         End If
 
@@ -51,7 +51,7 @@
 
     Private Sub btnSalir_Click(sender As Object, e As EventArgs) Handles btnSalir.Click
         Me.Close() 'Cierra el menu de opciones
-        frmCajeroAcceso.Show() 'Reabre la ventana de acceso del cajero
+        FrmAcceso.Show() 'Reabre la ventana de acceso del cajero
     End Sub
 
 End Class

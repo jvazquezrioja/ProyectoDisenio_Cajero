@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmCajeroOpciones
+Partial Class FrmOpciones
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,7 +22,7 @@ Partial Class frmCajeroOpciones
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmCajeroOpciones))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmOpciones))
         Me.pbxNombreBanco = New System.Windows.Forms.PictureBox()
         Me.pbxLogoBanco = New System.Windows.Forms.PictureBox()
         Me.btnSalir = New System.Windows.Forms.Button()
@@ -131,7 +131,7 @@ Partial Class frmCajeroOpciones
         Me.lblInstruccion.Text = "Selecciona una opción"
         Me.lblInstruccion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'frmCajeroOpciones
+        'FrmOpciones
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -147,7 +147,7 @@ Partial Class frmCajeroOpciones
         Me.Controls.Add(Me.lblInstruccion)
         Me.Controls.Add(Me.pbxNombreBanco)
         Me.Controls.Add(Me.pbxLogoBanco)
-        Me.Name = "frmCajeroOpciones"
+        Me.Name = "FrmOpciones"
         Me.Text = "Menu Principal"
         CType(Me.pbxNombreBanco, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbxLogoBanco, System.ComponentModel.ISupportInitialize).EndInit()

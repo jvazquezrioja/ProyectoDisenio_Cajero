@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class FrmCompañiasint
+Partial Class FrmFrmCompañiasInt
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -22,7 +22,7 @@ Partial Class FrmCompañiasint
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmCompañiasint))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmFrmCompañiasInt))
         Me.BtnRegresar = New System.Windows.Forms.Button()
         Me.BtnIzzi = New System.Windows.Forms.Button()
         Me.BtnMovistar = New System.Windows.Forms.Button()
@@ -114,7 +114,7 @@ Partial Class FrmCompañiasint
         Me.pbxLogoBanco.TabIndex = 14
         Me.pbxLogoBanco.TabStop = False
         '
-        'FrmCompañiasint
+        'FrmFrmCompañiasInt
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -129,7 +129,7 @@ Partial Class FrmCompañiasint
         Me.Controls.Add(Me.BtnInfinitum)
         Me.Controls.Add(Me.LblInstruccion)
         Me.Margin = New System.Windows.Forms.Padding(4)
-        Me.Name = "FrmCompañiasint"
+        Me.Name = "FrmFrmCompañiasInt"
         Me.Text = "Form2"
         CType(Me.pbxNombreBanco, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbxLogoBanco, System.ComponentModel.ISupportInitialize).EndInit()

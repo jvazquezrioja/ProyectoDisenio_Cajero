@@ -1,10 +1,10 @@
 ﻿Public Class frmRetirarDinero
     Private Sub frmRetirarDinero_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        If (Not (frmCajeroAcceso.idioma)) Then 'Revisa sí la idioma es false(versión inglés)
+        If (Not (FrmAcceso.idioma)) Then 'Revisa sí la idioma es false(versión inglés)
             versionEnIngles()
         End If
 
-        Dim saldo As String = Val(frmCajeroAcceso.saldo) 'Transformamos el valor double de saldo a string
+        Dim saldo As String = Val(FrmAcceso.saldo) 'Transformamos el valor double de saldo a string
         lblSaldo.Text = "$" + saldo 'Visualización del saldo en pantalla
     End Sub
 
@@ -46,24 +46,24 @@
     End Sub
 
     Private Sub verificarCantidad(cantidad As Double) 'Toma el valor del boton seleccionado, checa que sea menor que el saldo y se lo resta
-        If (frmCajeroAcceso.saldo >= cantidad) Then
-            frmCajeroAcceso.saldo -= cantidad
-            If frmCajeroAcceso.idioma Then
+        If (FrmAcceso.saldo >= cantidad) Then
+            FrmAcceso.saldo -= cantidad
+            If FrmAcceso.idioma Then
                 MessageBox.Show("!Exito!")
             Else
                 MessageBox.Show("Success!")
             End If
 
-            Dim saldo As String = Val(frmCajeroAcceso.saldo)
+            Dim saldo As String = Val(FrmAcceso.saldo)
             lblSaldo.Text = "$" + saldo
             Dim retiro As String = Val(cantidad)
-            If frmCajeroAcceso.idioma Then 'Agrega la operación al ArrayList dependiendo del idioma seleccionado
-                frmCajeroOpciones.conjuntoDeOperaciones.Add("Retiro de efectivo con un monto de $" + retiro)
+            If FrmAcceso.idioma Then 'Agrega la operación al ArrayList dependiendo del idioma seleccionado
+                FrmOpciones.conjuntoDeOperaciones.Add("Retiro de efectivo con un monto de $" + retiro)
             Else
-                frmCajeroOpciones.conjuntoDeOperaciones.Add("Fund withdrawal: $" + retiro)
+                FrmOpciones.conjuntoDeOperaciones.Add("Fund withdrawal: $" + retiro)
             End If
         Else
-            If frmCajeroAcceso.idioma Then
+            If FrmAcceso.idioma Then
                 MessageBox.Show("No cuentas con suficientes fondos")
             Else
                 MessageBox.Show("Not enough funds")

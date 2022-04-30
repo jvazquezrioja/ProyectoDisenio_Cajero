@@ -1,7 +1,7 @@
 ﻿Public Class FrmTelefono
     Public valor As Integer 'Valor de recarga seleccionado en el FrmTiempoAire
     Private Sub Form3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        If (Not (frmCajeroAcceso.idioma)) Then 'Revisa sí la idioma es false(versión inglés)
+        If (Not (FrmAcceso.idioma)) Then 'Revisa sí la idioma es false(versión inglés)
             versionEnIngles()
         End If
     End Sub
@@ -68,24 +68,24 @@
     End Sub
 
     Private Sub BtnContinuar_Click(sender As Object, e As EventArgs) Handles BtnContinuar.Click
-        If (TbxNumero.Text = "" Or TbxNumero.Text.Count <> 10 Or frmCajeroAcceso.saldo < valor) Then 'Revisa si el textbox no esta vacio y si tiene 10 digitos, ademas de ver que se pueda pagar
-            If frmCajeroAcceso.idioma Then
+        If (TbxNumero.Text = "" Or TbxNumero.Text.Count <> 10 Or FrmAcceso.saldo < valor) Then 'Revisa si el textbox no esta vacio y si tiene 10 digitos, ademas de ver que se pueda pagar
+            If FrmAcceso.idioma Then
                 MsgBox("Ingrese un numero valido", MsgBoxStyle.OkOnly + MsgBoxStyle.Critical, "Aviso") 'Avisa que algo esta mal en los datos
             Else
                 MsgBox("Enter a valid number", MsgBoxStyle.OkOnly + MsgBoxStyle.Critical, "Warning")
             End If
         Else
-            If frmCajeroAcceso.idioma Then
+            If FrmAcceso.idioma Then
                 MsgBox("Se realizo la recarga de la compañia " + frmTiempoAire.compania + " de un valor de " + valor.ToString + " al numero de " + TbxNumero.Text, MsgBoxStyle.OkOnly + MsgBoxStyle.Information, "Aviso") 'Imprime que se logro hacer la transaccion
             Else
                 MsgBox("The transaction was succesful! Company: " + frmTiempoAire.compania + " with an amount of " + valor.ToString + " to the phone number " + TbxNumero.Text, MsgBoxStyle.OkOnly + MsgBoxStyle.Information, "Update") 'Imprime que se logro hacer la transaccion
             End If
-            frmCajeroAcceso.saldo = frmCajeroAcceso.saldo - valor 'Cambia la variable de saldo
+            FrmAcceso.saldo = FrmAcceso.saldo - valor 'Cambia la variable de saldo
                 FrmCompania.Dispose() 'Descarga el form de compañia
                 frmTiempoAire.Dispose() 'Descarga el form de tiempo aire
                 Me.Close() 'Se cierra este form
-                frmCajeroAcceso.Show() 'Abre el menu de opciones
-            End If
+            FrmAcceso.Show() 'Abre el menu de opciones
+        End If
 
     End Sub
 

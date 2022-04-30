@@ -4,7 +4,7 @@
         txtCantidad.Text = ""
         txtReferencia.Text = ""
 
-        If (Not (frmCajeroAcceso.idioma)) Then 'Revisa sí la idioma es false(versión inglés)
+        If (Not (FrmAcceso.idioma)) Then 'Revisa sí la idioma es false(versión inglés)
             versionEnIngles()
         End If
     End Sub
@@ -98,7 +98,7 @@
     Private Sub btnRegresar_Click(sender As Object, e As EventArgs) Handles btnRegresar.Click
         If (FrmPagoservicio.Servicio.Equals("Internet")) Then 'Regresa a la Form ComaniasInt en caso de haber seleccionado Internet en el Form de Servicios
             Me.Close()
-            FrmCompañiasint.Show()
+            FrmFrmCompañiasInt.Show()
         Else                              'Sí no se seleccionó internet en el Form Servicios, regresa directamente a ese Form 
             Me.Close()
             FrmPagoservicio.Show()
@@ -107,23 +107,50 @@
 
     Private Sub btnContinuar_Click(sender As Object, e As EventArgs) Handles btnContinuar.Click
         If (txtCantidad.Text.Length <> 0 And txtReferencia.Text.Length <> 0) Then 'Verifica que los textbox Referencia y Cantidad tengan un valor
-            If (FrmPagoservicio.Servicio.Equals("Internet") And frmCajeroAcceso.saldo >= Double.Parse(txtCantidad.Text)) Then 'Checa si se selecciono internet en el Form Servicios y que se cuenta con suficiente saldo para pagar la cantidad deseada
-                MsgBox("Se realizo el pago del Internet de compañia " + FrmCompañiasint.Compania + " de numero de referencia " +
+            If (FrmPagoservicio.Servicio.Equals("Internet") And FrmAcceso.saldo >= Double.Parse(txtCantidad.Text)) Then 'Checa si se selecciono internet en el Form Servicios y que se cuenta con suficiente saldo para pagar la cantidad deseada
+                If FrmAcceso.idioma Then
+                    MsgBox("Se realizo el pago de Internet a la compañia " + FrmFrmCompañiasInt.Compania + " de numero de referencia " +
                    txtReferencia.Text + " por un total de $" + txtCantidad.Text, vbOKOnly + vbInformation, "Aviso")
-                frmCajeroAcceso.saldo = frmCajeroAcceso.saldo - Double.Parse(txtCantidad.Text)
+                    FrmOpciones.conjuntoDeOperaciones.Add("Pago de Internet a la compañia " + FrmFrmCompañiasInt.Compania + " de numero de referencia " +
+                   txtReferencia.Text + " por un total de $" + txtCantidad.Text) 'Se agrega la operación al ArrayList para generar comprobante
+                Else 'Version en inglés
+                    MsgBox("Internet payment towards " + FrmFrmCompañiasInt.Compania + " company with a reference number of " +
+                   txtReferencia.Text + " for a total of $" + txtCantidad.Text + " was succesful!", vbOKOnly + vbInformation, "Notice")
+                    FrmAcceso.saldo = FrmAcceso.saldo - Double.Parse(txtCantidad.Text)
+                    FrmOpciones.conjuntoDeOperaciones.Add("Internet payment towards " + FrmFrmCompañiasInt.Compania + " company with a reference number of " +
+                   txtReferencia.Text + " for a total of $" + txtCantidad.Text)
+                End If
+                FrmAcceso.saldo = FrmAcceso.saldo - Double.Parse(txtCantidad.Text)
                 Me.Close()
-                frmCajeroOpciones.Show()
-            ElseIf (frmCajeroAcceso.saldo >= Double.Parse(txtCantidad.Text)) Then 'En caso de no haber seleccionado internet en el Form Servicios, simplemente revisa que tengas suficiente saldo para pagar el servicio seleccionado
-                MsgBox("Se realizo el pago del servicio de " + FrmPagoservicio.Servicio + " con un numero de referencia " +
+                FrmOpciones.Show()
+            ElseIf (FrmAcceso.saldo >= Double.Parse(txtCantidad.Text)) Then 'En caso de no haber seleccionado internet en el Form Servicios, simplemente revisa que tengas suficiente saldo para pagar el servicio seleccionado
+                If FrmAcceso.idioma Then
+                    MsgBox("Se realizo el pago del servicio de " + FrmPagoservicio.Servicio + " con un numero de referencia " +
                    txtReferencia.Text + " por un total de $" + txtCantidad.Text, vbOKOnly + vbInformation, "Aviso")
-                frmCajeroAcceso.saldo = frmCajeroAcceso.saldo - Double.Parse(txtCantidad.Text)
+                    FrmOpciones.conjuntoDeOperaciones.Add("Pago del servicio de " + FrmPagoservicio.Servicio + " con un numero de referencia " +
+                   txtReferencia.Text + " por un total de $" + txtCantidad.Text)
+                Else 'Versión en inglés
+                    MsgBox(FrmPagoservicio.Servicio + " payment with a reference nuber of " +
+                   txtReferencia.Text + " for a total of $" + txtCantidad.Text + " was succesful!", vbOKOnly + vbInformation, "Aviso")
+                    FrmOpciones.conjuntoDeOperaciones.Add(FrmPagoservicio.Servicio + " payment with a reference number of " +
+                   txtReferencia.Text + " for a total of $" + txtCantidad.Text)
+                End If
+                FrmAcceso.saldo = FrmAcceso.saldo - Double.Parse(txtCantidad.Text)
                 Me.Close()
-                frmCajeroOpciones.Show()
+                FrmOpciones.Show()
             Else
-                MsgBox("Ingrese un valor valido", vbCritical + vbOKOnly, "Error")
+                If FrmAcceso.idioma Then
+                    MsgBox("Ingrese un valor valido", vbCritical + vbOKOnly, "Error")
+                Else
+                    MsgBox("Enter a valid amount", vbCritical + vbOKOnly, "Error")
+                End If
             End If
-        Else
-            MsgBox("Ingrese un valor valido", vbCritical + vbOKOnly, "Error")
+                Else
+            If FrmAcceso.idioma Then
+                MsgBox("Ingrese un valor valido", vbCritical + vbOKOnly, "Error")
+            Else
+                MsgBox("Enter a valid amount", vbCritical + vbOKOnly, "Error")
+            End If
 
         End If
     End Sub

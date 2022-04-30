@@ -1,6 +1,6 @@
 ﻿Public Class frmCajeroTransferirDinero
     Private Sub frmCajeroTransferirDinero_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        If (Not (frmCajeroAcceso.idioma)) Then 'Revisa sí la idioma es false(versión inglés)
+        If (Not (FrmAcceso.idioma)) Then 'Revisa sí la idioma es false(versión inglés)
             versionEnIngles()
         End If
     End Sub
@@ -64,25 +64,25 @@
 
                 Dim cantidadATransferir As Double = Val(txtCantidadTranferir.Text) 'Asigna el valor de la textbox como double
 
-                If (cantidadATransferir <= frmCajeroAcceso.saldo And cantidadATransferir > 0) Then 'Checa que el valor que quiere transferir el usuario es menor al saldo y que no sea 0 o negativo
+                If (cantidadATransferir <= FrmAcceso.saldo And cantidadATransferir > 0) Then 'Checa que el valor que quiere transferir el usuario es menor al saldo y que no sea 0 o negativo
 
-                    If frmCajeroAcceso.idioma Then
+                    If FrmAcceso.idioma Then
 
                         MessageBox.Show("!Exito!") 'mensaje de exito
-                        frmCajeroOpciones.conjuntoDeOperaciones.Add("Transferencia a banco " + bancoUsado + " de cuenta: " + txtNumeroCuenta.Text + " con un monto de: $" + txtCantidadTranferir.Text) 'Agrega todo el proceso de transferencia al arreglo para poder generar un comprobante
+                        FrmOpciones.conjuntoDeOperaciones.Add("Transferencia a banco " + bancoUsado + " de cuenta: " + txtNumeroCuenta.Text + " con un monto de: $" + txtCantidadTranferir.Text) 'Agrega todo el proceso de transferencia al arreglo para poder generar un comprobante
 
                     Else
 
                         MessageBox.Show("Success!")
-                        frmCajeroOpciones.conjuntoDeOperaciones.Add("Funds transfer to " + bancoUsado + " bank Account: " + txtNumeroCuenta.Text + " Funds Transferred: $" + txtCantidadTranferir.Text)
+                        FrmOpciones.conjuntoDeOperaciones.Add("Funds transfer to " + bancoUsado + " bank Account: " + txtNumeroCuenta.Text + " Funds Transferred: $" + txtCantidadTranferir.Text)
 
                     End If
 
-                    frmCajeroAcceso.saldo -= cantidadATransferir 'Resta la cantidad de transferencia del saldo
+                    FrmAcceso.saldo -= cantidadATransferir 'Resta la cantidad de transferencia del saldo
 
                 Else
 
-                    If frmCajeroAcceso.idioma Then
+                    If FrmAcceso.idioma Then
                         MessageBox.Show("Cantidad no es valida") 'mensaje de error sí la cantidad es mayor al saldo o igual/menor a 0
                     Else
                         MessageBox.Show("Invalid amount")
@@ -91,7 +91,7 @@
                 End If
             Else
 
-                If frmCajeroAcceso.idioma Then
+                If FrmAcceso.idioma Then
 
                     MessageBox.Show("Favor de introducir el numero de cuenta") 'mensaje de error sí no se introdujo un numero de cuenta
 
@@ -105,7 +105,7 @@
 
         Else
 
-            If frmCajeroAcceso.idioma Then
+            If FrmAcceso.idioma Then
 
                 MessageBox.Show("Favor de seleccionar un banco") 'mensaje de error sí no se selecciono un banco
 
@@ -118,9 +118,9 @@
         End If
     End Sub
 
-    Private Sub btnRegresar_Click(sender As Object, e As EventArgs) Handles btnRegresar.Click 'Boton que cierra FrmCajeroTransferencia y abre FrmcajeroOpciones
+    Private Sub btnRegresar_Click(sender As Object, e As EventArgs) Handles btnRegresar.Click 'Boton que cierra FrmCajeroTransferencia y abre FrmOpciones
         Me.Close()
-        frmCajeroOpciones.Show()
+        FrmOpciones.Show()
     End Sub
 
 End Class

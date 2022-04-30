@@ -1,18 +1,18 @@
 ﻿Public Class frmComprobantes
     Private Sub frmComprobantes_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        If frmCajeroAcceso.idioma Then
-        Else
+        If Not FrmAcceso.idioma Then
             versionEnIngles()
         End If
-        If frmCajeroOpciones.conjuntoDeOperaciones.Count = 0 Then
-            If frmCajeroAcceso.idioma Then
+
+        If FrmOpciones.conjuntoDeOperaciones.Count = 0 Then
+            If FrmAcceso.idioma Then
                 lbxComprobantes.Items.Add("No hay transacciones recientes")
             Else
                 lbxComprobantes.Items.Add("No recent transactions")
             End If
         Else
-            For i As Integer = 0 To frmCajeroOpciones.conjuntoDeOperaciones.Count - 1
-                Dim pruebaArray As String = frmCajeroOpciones.conjuntoDeOperaciones(i)
+            For i As Integer = 0 To FrmOpciones.conjuntoDeOperaciones.Count - 1
+                Dim pruebaArray As String = FrmOpciones.conjuntoDeOperaciones(i)
                 lbxComprobantes.Items.Add(pruebaArray)
             Next
         End If
@@ -27,7 +27,5 @@
         Me.Hide()
         Me.Dispose()
     End Sub
-
-
 
 End Class

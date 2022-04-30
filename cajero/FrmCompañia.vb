@@ -1,6 +1,6 @@
 ﻿Public Class FrmCompania
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        If (Not (frmCajeroAcceso.idioma)) Then 'Revisa sí la idioma es false(versión inglés)
+        If (Not (FrmAcceso.idioma)) Then 'Revisa sí la idioma es false(versión inglés)
             versionEnIngles()
         End If
     End Sub
@@ -18,7 +18,7 @@
         FrmTelefono.Dispose()
         FrmTiempoAire.Dispose()
         Me.Close()
-        frmCajeroAcceso.Show()
+        FrmAcceso.Show()
     End Sub
 
     Private Sub BtnWeex_Click(sender As Object, e As EventArgs) Handles BtnWeex.Click 'Oculta este form y setea el valor de FrmTiempoAire.compania en Weex

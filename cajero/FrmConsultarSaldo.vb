@@ -1,9 +1,9 @@
 ﻿Public Class frmConsultarSaldo
     Private Sub frmCajeroSaldo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        If Not (frmCajeroAcceso.idioma) Then 'Usa la variable global idiomas para detemrinar
+        If Not frmAcceso.idioma Then 'Usa la variable global idiomas para detemrinar
             versionEnIngles()
         End If
-        Dim saldo As String = Val(frmCajeroAcceso.saldo) 'Transformamos el valor double de saldo a string
+        Dim saldo As String = Val(frmAcceso.saldo) 'Transformamos el valor double de saldo a string
         lblSaldo.Text = "$" + saldo 'Visualización del saldo en pantalla
     End Sub
 
@@ -14,7 +14,7 @@
     'Botones que cierran FrmConsultarSaldo y te regresan a FrmOpciones
     Private Sub btnRegresar_Click(sender As Object, e As EventArgs) Handles btnRegresar.Click
         Me.Close()
-        frmCajeroOpciones.Show()
+        FrmOpciones.Show()
     End Sub
 
 End Class
