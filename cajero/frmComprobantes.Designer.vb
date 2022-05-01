@@ -28,12 +28,13 @@ Partial Class frmComprobantes
         '
         'lbxComprobantes
         '
+        Me.lbxComprobantes.Font = New System.Drawing.Font("Arial Narrow", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.lbxComprobantes.FormattingEnabled = True
-        Me.lbxComprobantes.ItemHeight = 25
+        Me.lbxComprobantes.ItemHeight = 22
         Me.lbxComprobantes.Location = New System.Drawing.Point(280, 20)
         Me.lbxComprobantes.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.lbxComprobantes.Name = "lbxComprobantes"
-        Me.lbxComprobantes.Size = New System.Drawing.Size(660, 579)
+        Me.lbxComprobantes.Size = New System.Drawing.Size(660, 576)
         Me.lbxComprobantes.TabIndex = 1
         '
         'btnRegresar
