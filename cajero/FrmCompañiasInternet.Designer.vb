@@ -37,50 +37,55 @@ Partial Class FrmFrmCompañiasInt
         '
         'BtnRegresar
         '
-        Me.BtnRegresar.Location = New System.Drawing.Point(818, 517)
-        Me.BtnRegresar.Margin = New System.Windows.Forms.Padding(4)
+        Me.BtnRegresar.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.BtnRegresar.Location = New System.Drawing.Point(573, 310)
+        Me.BtnRegresar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnRegresar.Name = "BtnRegresar"
-        Me.BtnRegresar.Size = New System.Drawing.Size(136, 65)
+        Me.BtnRegresar.Size = New System.Drawing.Size(97, 45)
         Me.BtnRegresar.TabIndex = 13
         Me.BtnRegresar.Text = "Regresar"
         Me.BtnRegresar.UseVisualStyleBackColor = True
         '
         'BtnIzzi
         '
-        Me.BtnIzzi.Location = New System.Drawing.Point(818, 330)
-        Me.BtnIzzi.Margin = New System.Windows.Forms.Padding(4)
+        Me.BtnIzzi.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.BtnIzzi.Location = New System.Drawing.Point(573, 198)
+        Me.BtnIzzi.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnIzzi.Name = "BtnIzzi"
-        Me.BtnIzzi.Size = New System.Drawing.Size(136, 65)
+        Me.BtnIzzi.Size = New System.Drawing.Size(97, 45)
         Me.BtnIzzi.TabIndex = 12
         Me.BtnIzzi.Text = "Izzi"
         Me.BtnIzzi.UseVisualStyleBackColor = True
         '
         'BtnMovistar
         '
-        Me.BtnMovistar.Location = New System.Drawing.Point(818, 228)
-        Me.BtnMovistar.Margin = New System.Windows.Forms.Padding(4)
+        Me.BtnMovistar.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.BtnMovistar.Location = New System.Drawing.Point(573, 137)
+        Me.BtnMovistar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnMovistar.Name = "BtnMovistar"
-        Me.BtnMovistar.Size = New System.Drawing.Size(136, 65)
+        Me.BtnMovistar.Size = New System.Drawing.Size(97, 45)
         Me.BtnMovistar.TabIndex = 11
         Me.BtnMovistar.Text = "Movistar"
         Me.BtnMovistar.UseVisualStyleBackColor = True
         '
         'BtnMegacable
         '
-        Me.BtnMegacable.Location = New System.Drawing.Point(52, 330)
-        Me.BtnMegacable.Margin = New System.Windows.Forms.Padding(4)
+        Me.BtnMegacable.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.BtnMegacable.Location = New System.Drawing.Point(36, 198)
+        Me.BtnMegacable.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnMegacable.Name = "BtnMegacable"
-        Me.BtnMegacable.Size = New System.Drawing.Size(136, 65)
+        Me.BtnMegacable.Size = New System.Drawing.Size(97, 45)
         Me.BtnMegacable.TabIndex = 10
         Me.BtnMegacable.Text = "Megacable"
         Me.BtnMegacable.UseVisualStyleBackColor = True
         '
         'BtnInfinitum
         '
-        Me.BtnInfinitum.Location = New System.Drawing.Point(51, 237)
-        Me.BtnInfinitum.Margin = New System.Windows.Forms.Padding(4)
+        Me.BtnInfinitum.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.BtnInfinitum.Location = New System.Drawing.Point(36, 142)
+        Me.BtnInfinitum.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnInfinitum.Name = "BtnInfinitum"
-        Me.BtnInfinitum.Size = New System.Drawing.Size(136, 65)
+        Me.BtnInfinitum.Size = New System.Drawing.Size(97, 45)
         Me.BtnInfinitum.TabIndex = 9
         Me.BtnInfinitum.Text = "Infinitum"
         Me.BtnInfinitum.UseVisualStyleBackColor = True
@@ -89,37 +94,40 @@ Partial Class FrmFrmCompañiasInt
         '
         Me.LblInstruccion.AutoSize = True
         Me.LblInstruccion.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.LblInstruccion.Location = New System.Drawing.Point(308, 306)
-        Me.LblInstruccion.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LblInstruccion.Location = New System.Drawing.Point(216, 184)
         Me.LblInstruccion.Name = "LblInstruccion"
-        Me.LblInstruccion.Size = New System.Drawing.Size(389, 32)
+        Me.LblInstruccion.Size = New System.Drawing.Size(250, 21)
         Me.LblInstruccion.TabIndex = 8
-        Me.LblInstruccion.Text = "Seleccione la compañia de Internet"
+        Me.LblInstruccion.Text = "Seleccione la compañía de Internet"
         '
         'pbxNombreBanco
         '
-        Me.pbxNombreBanco.Image = CType(resources.GetObject("pbxNombreBanco.Image"), System.Drawing.Image)
-        Me.pbxNombreBanco.Location = New System.Drawing.Point(175, 12)
+        Me.pbxNombreBanco.BackgroundImage = CType(resources.GetObject("pbxNombreBanco.BackgroundImage"), System.Drawing.Image)
+        Me.pbxNombreBanco.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pbxNombreBanco.Location = New System.Drawing.Point(124, 10)
+        Me.pbxNombreBanco.Margin = New System.Windows.Forms.Padding(1)
         Me.pbxNombreBanco.Name = "pbxNombreBanco"
-        Me.pbxNombreBanco.Size = New System.Drawing.Size(606, 154)
-        Me.pbxNombreBanco.TabIndex = 15
+        Me.pbxNombreBanco.Size = New System.Drawing.Size(424, 92)
+        Me.pbxNombreBanco.TabIndex = 32
         Me.pbxNombreBanco.TabStop = False
         '
         'pbxLogoBanco
         '
-        Me.pbxLogoBanco.Image = CType(resources.GetObject("pbxLogoBanco.Image"), System.Drawing.Image)
-        Me.pbxLogoBanco.Location = New System.Drawing.Point(12, 12)
+        Me.pbxLogoBanco.BackgroundImage = CType(resources.GetObject("pbxLogoBanco.BackgroundImage"), System.Drawing.Image)
+        Me.pbxLogoBanco.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pbxLogoBanco.Location = New System.Drawing.Point(10, 10)
+        Me.pbxLogoBanco.Margin = New System.Windows.Forms.Padding(1)
         Me.pbxLogoBanco.Name = "pbxLogoBanco"
-        Me.pbxLogoBanco.Size = New System.Drawing.Size(145, 154)
-        Me.pbxLogoBanco.TabIndex = 14
+        Me.pbxLogoBanco.Size = New System.Drawing.Size(102, 92)
+        Me.pbxLogoBanco.TabIndex = 31
         Me.pbxLogoBanco.TabStop = False
         '
         'FrmFrmCompañiasInt
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 25.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1004, 644)
+        Me.ClientSize = New System.Drawing.Size(703, 386)
         Me.Controls.Add(Me.pbxNombreBanco)
         Me.Controls.Add(Me.pbxLogoBanco)
         Me.Controls.Add(Me.BtnRegresar)
@@ -128,9 +136,9 @@ Partial Class FrmFrmCompañiasInt
         Me.Controls.Add(Me.BtnMegacable)
         Me.Controls.Add(Me.BtnInfinitum)
         Me.Controls.Add(Me.LblInstruccion)
-        Me.Margin = New System.Windows.Forms.Padding(4)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "FrmFrmCompañiasInt"
-        Me.Text = "Form2"
+        Me.Text = "Companías de Internet"
         CType(Me.pbxNombreBanco, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbxLogoBanco, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

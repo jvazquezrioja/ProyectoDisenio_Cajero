@@ -23,8 +23,6 @@ Partial Class frmCajeroTransferirDinero
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmCajeroTransferirDinero))
-        Me.pbxNombreBanco = New System.Windows.Forms.PictureBox()
-        Me.pbxLogoBanco = New System.Windows.Forms.PictureBox()
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         Me.BackgroundWorker2 = New System.ComponentModel.BackgroundWorker()
         Me.lblLlenaDatos = New System.Windows.Forms.Label()
@@ -43,38 +41,23 @@ Partial Class frmCajeroTransferirDinero
         Me.lblRealizarTransferencia = New System.Windows.Forms.Label()
         Me.pbxFlecha = New System.Windows.Forms.PictureBox()
         Me.btnRegresar = New System.Windows.Forms.Button()
-        CType(Me.pbxNombreBanco, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.pbxLogoBanco, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pbxNombreBanco = New System.Windows.Forms.PictureBox()
+        Me.pbxLogoBanco = New System.Windows.Forms.PictureBox()
         Me.pnlBancos.SuspendLayout()
         Me.pnlTransferencia.SuspendLayout()
         CType(Me.pbxFlecha, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbxNombreBanco, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbxLogoBanco, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'pbxNombreBanco
-        '
-        Me.pbxNombreBanco.Image = CType(resources.GetObject("pbxNombreBanco.Image"), System.Drawing.Image)
-        Me.pbxNombreBanco.Location = New System.Drawing.Point(175, 12)
-        Me.pbxNombreBanco.Name = "pbxNombreBanco"
-        Me.pbxNombreBanco.Size = New System.Drawing.Size(606, 154)
-        Me.pbxNombreBanco.TabIndex = 6
-        Me.pbxNombreBanco.TabStop = False
-        '
-        'pbxLogoBanco
-        '
-        Me.pbxLogoBanco.Image = CType(resources.GetObject("pbxLogoBanco.Image"), System.Drawing.Image)
-        Me.pbxLogoBanco.Location = New System.Drawing.Point(12, 12)
-        Me.pbxLogoBanco.Name = "pbxLogoBanco"
-        Me.pbxLogoBanco.Size = New System.Drawing.Size(145, 154)
-        Me.pbxLogoBanco.TabIndex = 5
-        Me.pbxLogoBanco.TabStop = False
         '
         'lblLlenaDatos
         '
         Me.lblLlenaDatos.BackColor = System.Drawing.Color.White
         Me.lblLlenaDatos.Font = New System.Drawing.Font("Arial", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblLlenaDatos.Location = New System.Drawing.Point(651, 201)
+        Me.lblLlenaDatos.Location = New System.Drawing.Point(456, 121)
+        Me.lblLlenaDatos.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblLlenaDatos.Name = "lblLlenaDatos"
-        Me.lblLlenaDatos.Size = New System.Drawing.Size(302, 47)
+        Me.lblLlenaDatos.Size = New System.Drawing.Size(211, 28)
         Me.lblLlenaDatos.TabIndex = 48
         Me.lblLlenaDatos.Text = "Llena los datos"
         Me.lblLlenaDatos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -85,18 +68,20 @@ Partial Class frmCajeroTransferirDinero
         Me.pnlBancos.Controls.Add(Me.rbtnBanco3)
         Me.pnlBancos.Controls.Add(Me.rbtnBanco2)
         Me.pnlBancos.Controls.Add(Me.rbtnBanco1)
-        Me.pnlBancos.Location = New System.Drawing.Point(53, 248)
+        Me.pnlBancos.Location = New System.Drawing.Point(37, 149)
+        Me.pnlBancos.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.pnlBancos.Name = "pnlBancos"
-        Me.pnlBancos.Size = New System.Drawing.Size(324, 309)
+        Me.pnlBancos.Size = New System.Drawing.Size(227, 185)
         Me.pnlBancos.TabIndex = 47
         '
         'rbtnBanco4
         '
         Me.rbtnBanco4.BackgroundImage = CType(resources.GetObject("rbtnBanco4.BackgroundImage"), System.Drawing.Image)
         Me.rbtnBanco4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.rbtnBanco4.Location = New System.Drawing.Point(27, 240)
+        Me.rbtnBanco4.Location = New System.Drawing.Point(19, 144)
+        Me.rbtnBanco4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.rbtnBanco4.Name = "rbtnBanco4"
-        Me.rbtnBanco4.Size = New System.Drawing.Size(284, 64)
+        Me.rbtnBanco4.Size = New System.Drawing.Size(199, 38)
         Me.rbtnBanco4.TabIndex = 43
         Me.rbtnBanco4.TabStop = True
         Me.rbtnBanco4.UseVisualStyleBackColor = True
@@ -105,9 +90,10 @@ Partial Class frmCajeroTransferirDinero
         '
         Me.rbtnBanco3.BackgroundImage = CType(resources.GetObject("rbtnBanco3.BackgroundImage"), System.Drawing.Image)
         Me.rbtnBanco3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.rbtnBanco3.Location = New System.Drawing.Point(27, 161)
+        Me.rbtnBanco3.Location = New System.Drawing.Point(19, 97)
+        Me.rbtnBanco3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.rbtnBanco3.Name = "rbtnBanco3"
-        Me.rbtnBanco3.Size = New System.Drawing.Size(284, 64)
+        Me.rbtnBanco3.Size = New System.Drawing.Size(199, 38)
         Me.rbtnBanco3.TabIndex = 42
         Me.rbtnBanco3.TabStop = True
         Me.rbtnBanco3.UseVisualStyleBackColor = True
@@ -116,9 +102,10 @@ Partial Class frmCajeroTransferirDinero
         '
         Me.rbtnBanco2.BackgroundImage = CType(resources.GetObject("rbtnBanco2.BackgroundImage"), System.Drawing.Image)
         Me.rbtnBanco2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.rbtnBanco2.Location = New System.Drawing.Point(27, 82)
+        Me.rbtnBanco2.Location = New System.Drawing.Point(19, 49)
+        Me.rbtnBanco2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.rbtnBanco2.Name = "rbtnBanco2"
-        Me.rbtnBanco2.Size = New System.Drawing.Size(284, 64)
+        Me.rbtnBanco2.Size = New System.Drawing.Size(199, 38)
         Me.rbtnBanco2.TabIndex = 41
         Me.rbtnBanco2.TabStop = True
         Me.rbtnBanco2.UseVisualStyleBackColor = True
@@ -127,9 +114,10 @@ Partial Class frmCajeroTransferirDinero
         '
         Me.rbtnBanco1.BackgroundImage = CType(resources.GetObject("rbtnBanco1.BackgroundImage"), System.Drawing.Image)
         Me.rbtnBanco1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.rbtnBanco1.Location = New System.Drawing.Point(27, 3)
+        Me.rbtnBanco1.Location = New System.Drawing.Point(19, 2)
+        Me.rbtnBanco1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.rbtnBanco1.Name = "rbtnBanco1"
-        Me.rbtnBanco1.Size = New System.Drawing.Size(284, 64)
+        Me.rbtnBanco1.Size = New System.Drawing.Size(199, 38)
         Me.rbtnBanco1.TabIndex = 40
         Me.rbtnBanco1.TabStop = True
         Me.rbtnBanco1.UseVisualStyleBackColor = True
@@ -143,23 +131,27 @@ Partial Class frmCajeroTransferirDinero
         Me.pnlTransferencia.Controls.Add(Me.lblCantidadTransferencia)
         Me.pnlTransferencia.Controls.Add(Me.txtNumeroCuenta)
         Me.pnlTransferencia.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.pnlTransferencia.Location = New System.Drawing.Point(653, 251)
+        Me.pnlTransferencia.Location = New System.Drawing.Point(457, 151)
+        Me.pnlTransferencia.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.pnlTransferencia.Name = "pnlTransferencia"
-        Me.pnlTransferencia.Size = New System.Drawing.Size(300, 309)
+        Me.pnlTransferencia.Size = New System.Drawing.Size(210, 185)
         Me.pnlTransferencia.TabIndex = 46
         '
         'txtCantidadTranferir
         '
-        Me.txtCantidadTranferir.Location = New System.Drawing.Point(73, 146)
+        Me.txtCantidadTranferir.Location = New System.Drawing.Point(51, 88)
+        Me.txtCantidadTranferir.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtCantidadTranferir.Name = "txtCantidadTranferir"
-        Me.txtCantidadTranferir.Size = New System.Drawing.Size(136, 35)
+        Me.txtCantidadTranferir.Size = New System.Drawing.Size(96, 26)
         Me.txtCantidadTranferir.TabIndex = 29
         '
         'btnTransferir
         '
-        Me.btnTransferir.Location = New System.Drawing.Point(73, 212)
+        Me.btnTransferir.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btnTransferir.Location = New System.Drawing.Point(51, 127)
+        Me.btnTransferir.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnTransferir.Name = "btnTransferir"
-        Me.btnTransferir.Size = New System.Drawing.Size(136, 65)
+        Me.btnTransferir.Size = New System.Drawing.Size(97, 45)
         Me.btnTransferir.TabIndex = 30
         Me.btnTransferir.Text = "Transferir"
         Me.btnTransferir.UseVisualStyleBackColor = True
@@ -167,35 +159,39 @@ Partial Class frmCajeroTransferirDinero
         'lblCuenta
         '
         Me.lblCuenta.AutoSize = True
-        Me.lblCuenta.Location = New System.Drawing.Point(55, 26)
+        Me.lblCuenta.Location = New System.Drawing.Point(38, 16)
+        Me.lblCuenta.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblCuenta.Name = "lblCuenta"
-        Me.lblCuenta.Size = New System.Drawing.Size(180, 29)
+        Me.lblCuenta.Size = New System.Drawing.Size(125, 20)
         Me.lblCuenta.TabIndex = 26
         Me.lblCuenta.Text = "Cuenta de 7 digitos"
         '
         'lblCantidadTransferencia
         '
         Me.lblCantidadTransferencia.AutoSize = True
-        Me.lblCantidadTransferencia.Location = New System.Drawing.Point(44, 108)
+        Me.lblCantidadTransferencia.Location = New System.Drawing.Point(31, 65)
+        Me.lblCantidadTransferencia.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblCantidadTransferencia.Name = "lblCantidadTransferencia"
-        Me.lblCantidadTransferencia.Size = New System.Drawing.Size(191, 29)
+        Me.lblCantidadTransferencia.Size = New System.Drawing.Size(126, 20)
         Me.lblCantidadTransferencia.TabIndex = 28
         Me.lblCantidadTransferencia.Text = "Cantidad a transferir"
         '
         'txtNumeroCuenta
         '
-        Me.txtNumeroCuenta.Location = New System.Drawing.Point(73, 64)
+        Me.txtNumeroCuenta.Location = New System.Drawing.Point(51, 38)
+        Me.txtNumeroCuenta.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtNumeroCuenta.Name = "txtNumeroCuenta"
-        Me.txtNumeroCuenta.Size = New System.Drawing.Size(136, 35)
+        Me.txtNumeroCuenta.Size = New System.Drawing.Size(96, 26)
         Me.txtNumeroCuenta.TabIndex = 27
         '
         'lblEligeUnBanco
         '
         Me.lblEligeUnBanco.BackColor = System.Drawing.Color.White
         Me.lblEligeUnBanco.Font = New System.Drawing.Font("Arial", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblEligeUnBanco.Location = New System.Drawing.Point(62, 206)
+        Me.lblEligeUnBanco.Location = New System.Drawing.Point(43, 124)
+        Me.lblEligeUnBanco.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblEligeUnBanco.Name = "lblEligeUnBanco"
-        Me.lblEligeUnBanco.Size = New System.Drawing.Size(302, 39)
+        Me.lblEligeUnBanco.Size = New System.Drawing.Size(211, 23)
         Me.lblEligeUnBanco.TabIndex = 45
         Me.lblEligeUnBanco.Text = "Elige un banco"
         Me.lblEligeUnBanco.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -205,38 +201,65 @@ Partial Class frmCajeroTransferirDinero
         Me.lblRealizarTransferencia.AutoSize = True
         Me.lblRealizarTransferencia.BackColor = System.Drawing.Color.White
         Me.lblRealizarTransferencia.Font = New System.Drawing.Font("Arial", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.lblRealizarTransferencia.Location = New System.Drawing.Point(323, 169)
+        Me.lblRealizarTransferencia.Location = New System.Drawing.Point(226, 101)
+        Me.lblRealizarTransferencia.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblRealizarTransferencia.Name = "lblRealizarTransferencia"
-        Me.lblRealizarTransferencia.Size = New System.Drawing.Size(362, 37)
+        Me.lblRealizarTransferencia.Size = New System.Drawing.Size(239, 26)
         Me.lblRealizarTransferencia.TabIndex = 44
         Me.lblRealizarTransferencia.Text = "Realizar Transferencia"
         '
         'pbxFlecha
         '
         Me.pbxFlecha.Image = CType(resources.GetObject("pbxFlecha.Image"), System.Drawing.Image)
-        Me.pbxFlecha.Location = New System.Drawing.Point(426, 330)
+        Me.pbxFlecha.Location = New System.Drawing.Point(298, 198)
+        Me.pbxFlecha.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.pbxFlecha.Name = "pbxFlecha"
-        Me.pbxFlecha.Size = New System.Drawing.Size(177, 136)
+        Me.pbxFlecha.Size = New System.Drawing.Size(124, 82)
         Me.pbxFlecha.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pbxFlecha.TabIndex = 49
         Me.pbxFlecha.TabStop = False
         '
         'btnRegresar
         '
-        Me.btnRegresar.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.btnRegresar.Location = New System.Drawing.Point(726, 563)
+        Me.btnRegresar.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btnRegresar.Location = New System.Drawing.Point(508, 338)
+        Me.btnRegresar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnRegresar.Name = "btnRegresar"
-        Me.btnRegresar.Size = New System.Drawing.Size(136, 67)
+        Me.btnRegresar.Size = New System.Drawing.Size(97, 45)
         Me.btnRegresar.TabIndex = 43
         Me.btnRegresar.Text = "Regresar"
         Me.btnRegresar.UseVisualStyleBackColor = True
         '
+        'pbxNombreBanco
+        '
+        Me.pbxNombreBanco.BackgroundImage = CType(resources.GetObject("pbxNombreBanco.BackgroundImage"), System.Drawing.Image)
+        Me.pbxNombreBanco.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pbxNombreBanco.Location = New System.Drawing.Point(124, 10)
+        Me.pbxNombreBanco.Margin = New System.Windows.Forms.Padding(1)
+        Me.pbxNombreBanco.Name = "pbxNombreBanco"
+        Me.pbxNombreBanco.Size = New System.Drawing.Size(424, 92)
+        Me.pbxNombreBanco.TabIndex = 51
+        Me.pbxNombreBanco.TabStop = False
+        '
+        'pbxLogoBanco
+        '
+        Me.pbxLogoBanco.BackgroundImage = CType(resources.GetObject("pbxLogoBanco.BackgroundImage"), System.Drawing.Image)
+        Me.pbxLogoBanco.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pbxLogoBanco.Location = New System.Drawing.Point(10, 10)
+        Me.pbxLogoBanco.Margin = New System.Windows.Forms.Padding(1)
+        Me.pbxLogoBanco.Name = "pbxLogoBanco"
+        Me.pbxLogoBanco.Size = New System.Drawing.Size(102, 92)
+        Me.pbxLogoBanco.TabIndex = 50
+        Me.pbxLogoBanco.TabStop = False
+        '
         'frmCajeroTransferirDinero
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 25.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1004, 644)
+        Me.ClientSize = New System.Drawing.Size(703, 386)
+        Me.Controls.Add(Me.pbxNombreBanco)
+        Me.Controls.Add(Me.pbxLogoBanco)
         Me.Controls.Add(Me.lblLlenaDatos)
         Me.Controls.Add(Me.pnlBancos)
         Me.Controls.Add(Me.pnlTransferencia)
@@ -244,23 +267,19 @@ Partial Class frmCajeroTransferirDinero
         Me.Controls.Add(Me.lblRealizarTransferencia)
         Me.Controls.Add(Me.pbxFlecha)
         Me.Controls.Add(Me.btnRegresar)
-        Me.Controls.Add(Me.pbxNombreBanco)
-        Me.Controls.Add(Me.pbxLogoBanco)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "frmCajeroTransferirDinero"
         Me.Text = "Transferencias"
-        CType(Me.pbxNombreBanco, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.pbxLogoBanco, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlBancos.ResumeLayout(False)
         Me.pnlTransferencia.ResumeLayout(False)
         Me.pnlTransferencia.PerformLayout()
         CType(Me.pbxFlecha, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbxNombreBanco, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbxLogoBanco, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents pbxNombreBanco As PictureBox
-    Friend WithEvents pbxLogoBanco As PictureBox
     Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
     Friend WithEvents BackgroundWorker2 As System.ComponentModel.BackgroundWorker
     Friend WithEvents lblLlenaDatos As Label
@@ -279,4 +298,6 @@ Partial Class frmCajeroTransferirDinero
     Friend WithEvents lblRealizarTransferencia As Label
     Friend WithEvents pbxFlecha As PictureBox
     Friend WithEvents btnRegresar As Button
+    Friend WithEvents pbxNombreBanco As PictureBox
+    Friend WithEvents pbxLogoBanco As PictureBox
 End Class

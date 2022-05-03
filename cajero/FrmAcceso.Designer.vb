@@ -37,7 +37,8 @@ Partial Class FrmAcceso
         'btnMenuOpciones
         '
         Me.btnMenuOpciones.BackColor = System.Drawing.Color.White
-        Me.btnMenuOpciones.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnMenuOpciones.BackgroundImage = CType(resources.GetObject("btnMenuOpciones.BackgroundImage"), System.Drawing.Image)
+        Me.btnMenuOpciones.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.btnMenuOpciones.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnMenuOpciones.FlatAppearance.BorderSize = 0
         Me.btnMenuOpciones.FlatAppearance.MouseDownBackColor = System.Drawing.Color.WhiteSmoke
@@ -45,32 +46,33 @@ Partial Class FrmAcceso
         Me.btnMenuOpciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnMenuOpciones.Font = New System.Drawing.Font("Showcard Gothic", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btnMenuOpciones.ForeColor = System.Drawing.Color.DodgerBlue
-        Me.btnMenuOpciones.Image = CType(resources.GetObject("btnMenuOpciones.Image"), System.Drawing.Image)
-        Me.btnMenuOpciones.Location = New System.Drawing.Point(317, 211)
-        Me.btnMenuOpciones.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnMenuOpciones.Location = New System.Drawing.Point(222, 130)
+        Me.btnMenuOpciones.Margin = New System.Windows.Forms.Padding(1, 1, 1, 1)
         Me.btnMenuOpciones.Name = "btnMenuOpciones"
-        Me.btnMenuOpciones.Size = New System.Drawing.Size(370, 222)
+        Me.btnMenuOpciones.Size = New System.Drawing.Size(257, 210)
         Me.btnMenuOpciones.TabIndex = 0
         Me.btnMenuOpciones.TextAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnMenuOpciones.UseVisualStyleBackColor = False
         '
         'pbxLogoBanco
         '
-        Me.pbxLogoBanco.Image = CType(resources.GetObject("pbxLogoBanco.Image"), System.Drawing.Image)
-        Me.pbxLogoBanco.Location = New System.Drawing.Point(12, 12)
-        Me.pbxLogoBanco.Margin = New System.Windows.Forms.Padding(2)
+        Me.pbxLogoBanco.BackgroundImage = CType(resources.GetObject("pbxLogoBanco.BackgroundImage"), System.Drawing.Image)
+        Me.pbxLogoBanco.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pbxLogoBanco.Location = New System.Drawing.Point(8, 7)
+        Me.pbxLogoBanco.Margin = New System.Windows.Forms.Padding(1, 1, 1, 1)
         Me.pbxLogoBanco.Name = "pbxLogoBanco"
-        Me.pbxLogoBanco.Size = New System.Drawing.Size(145, 154)
+        Me.pbxLogoBanco.Size = New System.Drawing.Size(102, 92)
         Me.pbxLogoBanco.TabIndex = 1
         Me.pbxLogoBanco.TabStop = False
         '
         'pbxNombreBanco
         '
-        Me.pbxNombreBanco.Image = CType(resources.GetObject("pbxNombreBanco.Image"), System.Drawing.Image)
-        Me.pbxNombreBanco.Location = New System.Drawing.Point(175, 12)
-        Me.pbxNombreBanco.Margin = New System.Windows.Forms.Padding(2)
+        Me.pbxNombreBanco.BackgroundImage = CType(resources.GetObject("pbxNombreBanco.BackgroundImage"), System.Drawing.Image)
+        Me.pbxNombreBanco.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pbxNombreBanco.Location = New System.Drawing.Point(122, 7)
+        Me.pbxNombreBanco.Margin = New System.Windows.Forms.Padding(1, 1, 1, 1)
         Me.pbxNombreBanco.Name = "pbxNombreBanco"
-        Me.pbxNombreBanco.Size = New System.Drawing.Size(606, 154)
+        Me.pbxNombreBanco.Size = New System.Drawing.Size(424, 92)
         Me.pbxNombreBanco.TabIndex = 2
         Me.pbxNombreBanco.TabStop = False
         '
@@ -79,10 +81,10 @@ Partial Class FrmAcceso
         Me.lblAcceso.AutoSize = True
         Me.lblAcceso.Font = New System.Drawing.Font("Showcard Gothic", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.lblAcceso.ForeColor = System.Drawing.SystemColors.MenuHighlight
-        Me.lblAcceso.Location = New System.Drawing.Point(379, 169)
-        Me.lblAcceso.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblAcceso.Location = New System.Drawing.Point(265, 101)
+        Me.lblAcceso.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.lblAcceso.Name = "lblAcceso"
-        Me.lblAcceso.Size = New System.Drawing.Size(247, 40)
+        Me.lblAcceso.Size = New System.Drawing.Size(173, 28)
         Me.lblAcceso.TabIndex = 3
         Me.lblAcceso.Text = "¡Bienvenido!"
         '
@@ -91,36 +93,37 @@ Partial Class FrmAcceso
         Me.cbxIdiomas.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.cbxIdiomas.FormattingEnabled = True
         Me.cbxIdiomas.Items.AddRange(New Object() {"Español", "English"})
-        Me.cbxIdiomas.Location = New System.Drawing.Point(704, 574)
-        Me.cbxIdiomas.Margin = New System.Windows.Forms.Padding(2)
+        Me.cbxIdiomas.Location = New System.Drawing.Point(475, 342)
+        Me.cbxIdiomas.Margin = New System.Windows.Forms.Padding(1, 1, 1, 1)
         Me.cbxIdiomas.Name = "cbxIdiomas"
-        Me.cbxIdiomas.Size = New System.Drawing.Size(182, 37)
+        Me.cbxIdiomas.Size = New System.Drawing.Size(129, 28)
         Me.cbxIdiomas.TabIndex = 5
         Me.cbxIdiomas.Text = "Idiomas"
         '
         'pbxIdioma
         '
-        Me.pbxIdioma.Image = CType(resources.GetObject("pbxIdioma.Image"), System.Drawing.Image)
-        Me.pbxIdioma.Location = New System.Drawing.Point(892, 541)
-        Me.pbxIdioma.Margin = New System.Windows.Forms.Padding(2)
+        Me.pbxIdioma.BackgroundImage = CType(resources.GetObject("pbxIdioma.BackgroundImage"), System.Drawing.Image)
+        Me.pbxIdioma.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pbxIdioma.Location = New System.Drawing.Point(606, 310)
+        Me.pbxIdioma.Margin = New System.Windows.Forms.Padding(1, 1, 1, 1)
         Me.pbxIdioma.Name = "pbxIdioma"
-        Me.pbxIdioma.Size = New System.Drawing.Size(100, 91)
+        Me.pbxIdioma.Size = New System.Drawing.Size(87, 76)
         Me.pbxIdioma.TabIndex = 6
         Me.pbxIdioma.TabStop = False
         '
         'FrmAcceso
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 25.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1004, 644)
+        Me.ClientSize = New System.Drawing.Size(703, 386)
         Me.Controls.Add(Me.pbxIdioma)
         Me.Controls.Add(Me.lblAcceso)
         Me.Controls.Add(Me.cbxIdiomas)
         Me.Controls.Add(Me.pbxNombreBanco)
         Me.Controls.Add(Me.pbxLogoBanco)
         Me.Controls.Add(Me.btnMenuOpciones)
-        Me.Margin = New System.Windows.Forms.Padding(2)
+        Me.Margin = New System.Windows.Forms.Padding(1, 1, 1, 1)
         Me.Name = "FrmAcceso"
         Me.Text = "Cajero"
         CType(Me.pbxLogoBanco, System.ComponentModel.ISupportInitialize).EndInit()

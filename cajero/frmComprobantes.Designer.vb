@@ -30,31 +30,29 @@ Partial Class frmComprobantes
         '
         Me.lbxComprobantes.Font = New System.Drawing.Font("Arial Narrow", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.lbxComprobantes.FormattingEnabled = True
-        Me.lbxComprobantes.ItemHeight = 22
-        Me.lbxComprobantes.Location = New System.Drawing.Point(280, 20)
-        Me.lbxComprobantes.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.lbxComprobantes.ItemHeight = 16
+        Me.lbxComprobantes.Location = New System.Drawing.Point(196, 12)
         Me.lbxComprobantes.Name = "lbxComprobantes"
-        Me.lbxComprobantes.Size = New System.Drawing.Size(660, 576)
+        Me.lbxComprobantes.Size = New System.Drawing.Size(463, 340)
         Me.lbxComprobantes.TabIndex = 1
         '
         'btnRegresar
         '
-        Me.btnRegresar.Location = New System.Drawing.Point(34, 534)
-        Me.btnRegresar.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnRegresar.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btnRegresar.Location = New System.Drawing.Point(24, 320)
         Me.btnRegresar.Name = "btnRegresar"
-        Me.btnRegresar.Size = New System.Drawing.Size(136, 65)
+        Me.btnRegresar.Size = New System.Drawing.Size(95, 47)
         Me.btnRegresar.TabIndex = 2
         Me.btnRegresar.Text = "Regresar"
         Me.btnRegresar.UseVisualStyleBackColor = True
         '
         'frmComprobantes
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 25.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1004, 644)
+        Me.ClientSize = New System.Drawing.Size(703, 386)
         Me.Controls.Add(Me.btnRegresar)
         Me.Controls.Add(Me.lbxComprobantes)
-        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "frmComprobantes"
         Me.Text = "Generar Comprobante"
         Me.ResumeLayout(False)

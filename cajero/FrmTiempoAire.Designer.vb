@@ -38,55 +38,55 @@ Partial Class frmTiempoAire
         '
         'Btn20
         '
-        Me.Btn20.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Btn20.Location = New System.Drawing.Point(51, 237)
-        Me.Btn20.Margin = New System.Windows.Forms.Padding(4)
+        Me.Btn20.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Btn20.Location = New System.Drawing.Point(36, 142)
+        Me.Btn20.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn20.Name = "Btn20"
-        Me.Btn20.Size = New System.Drawing.Size(136, 65)
+        Me.Btn20.Size = New System.Drawing.Size(95, 47)
         Me.Btn20.TabIndex = 0
         Me.Btn20.Text = "$20"
         Me.Btn20.UseVisualStyleBackColor = True
         '
         'Btn100
         '
-        Me.Btn100.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Btn100.Location = New System.Drawing.Point(818, 228)
-        Me.Btn100.Margin = New System.Windows.Forms.Padding(4)
+        Me.Btn100.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Btn100.Location = New System.Drawing.Point(573, 137)
+        Me.Btn100.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn100.Name = "Btn100"
-        Me.Btn100.Size = New System.Drawing.Size(136, 65)
+        Me.Btn100.Size = New System.Drawing.Size(95, 47)
         Me.Btn100.TabIndex = 1
         Me.Btn100.Text = "$100"
         Me.Btn100.UseVisualStyleBackColor = True
         '
         'Btn50
         '
-        Me.Btn50.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Btn50.Location = New System.Drawing.Point(52, 330)
-        Me.Btn50.Margin = New System.Windows.Forms.Padding(4)
+        Me.Btn50.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Btn50.Location = New System.Drawing.Point(36, 198)
+        Me.Btn50.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn50.Name = "Btn50"
-        Me.Btn50.Size = New System.Drawing.Size(136, 65)
+        Me.Btn50.Size = New System.Drawing.Size(95, 47)
         Me.Btn50.TabIndex = 2
         Me.Btn50.Text = "$50"
         Me.Btn50.UseVisualStyleBackColor = True
         '
         'Btn500
         '
-        Me.Btn500.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Btn500.Location = New System.Drawing.Point(818, 330)
-        Me.Btn500.Margin = New System.Windows.Forms.Padding(4)
+        Me.Btn500.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Btn500.Location = New System.Drawing.Point(573, 198)
+        Me.Btn500.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn500.Name = "Btn500"
-        Me.Btn500.Size = New System.Drawing.Size(136, 65)
+        Me.Btn500.Size = New System.Drawing.Size(95, 47)
         Me.Btn500.TabIndex = 3
         Me.Btn500.Text = "$500"
         Me.Btn500.UseVisualStyleBackColor = True
         '
         'BtnRegresar
         '
-        Me.BtnRegresar.Font = New System.Drawing.Font("Arial Narrow", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.BtnRegresar.Location = New System.Drawing.Point(818, 517)
-        Me.BtnRegresar.Margin = New System.Windows.Forms.Padding(4)
+        Me.BtnRegresar.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.BtnRegresar.Location = New System.Drawing.Point(573, 310)
+        Me.BtnRegresar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnRegresar.Name = "BtnRegresar"
-        Me.BtnRegresar.Size = New System.Drawing.Size(136, 65)
+        Me.BtnRegresar.Size = New System.Drawing.Size(95, 47)
         Me.BtnRegresar.TabIndex = 4
         Me.BtnRegresar.Text = "Regresar"
         Me.BtnRegresar.UseVisualStyleBackColor = True
@@ -96,47 +96,49 @@ Partial Class frmTiempoAire
         Me.lblnombreBanco.AutoSize = True
         Me.lblnombreBanco.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.lblnombreBanco.Font = New System.Drawing.Font("Segoe UI Emoji", 32.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblnombreBanco.Location = New System.Drawing.Point(106, 11)
-        Me.lblnombreBanco.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblnombreBanco.Location = New System.Drawing.Point(74, 7)
         Me.lblnombreBanco.Name = "lblnombreBanco"
-        Me.lblnombreBanco.Size = New System.Drawing.Size(0, 85)
+        Me.lblnombreBanco.Size = New System.Drawing.Size(0, 57)
         Me.lblnombreBanco.TabIndex = 5
         '
         'lblInstruccion
         '
         Me.lblInstruccion.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblInstruccion.Location = New System.Drawing.Point(271, 280)
-        Me.lblInstruccion.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblInstruccion.Location = New System.Drawing.Point(190, 168)
         Me.lblInstruccion.Name = "lblInstruccion"
-        Me.lblInstruccion.Size = New System.Drawing.Size(436, 99)
+        Me.lblInstruccion.Size = New System.Drawing.Size(305, 59)
         Me.lblInstruccion.TabIndex = 6
-        Me.lblInstruccion.Text = "Seleccione la recarga que desea de la compañia"
+        Me.lblInstruccion.Text = "Seleccione la recarga que desea de la compañía"
         Me.lblInstruccion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'pbxNombreBanco
         '
-        Me.pbxNombreBanco.Image = CType(resources.GetObject("pbxNombreBanco.Image"), System.Drawing.Image)
-        Me.pbxNombreBanco.Location = New System.Drawing.Point(175, 12)
+        Me.pbxNombreBanco.BackgroundImage = CType(resources.GetObject("pbxNombreBanco.BackgroundImage"), System.Drawing.Image)
+        Me.pbxNombreBanco.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pbxNombreBanco.Location = New System.Drawing.Point(124, 10)
+        Me.pbxNombreBanco.Margin = New System.Windows.Forms.Padding(1)
         Me.pbxNombreBanco.Name = "pbxNombreBanco"
-        Me.pbxNombreBanco.Size = New System.Drawing.Size(606, 154)
-        Me.pbxNombreBanco.TabIndex = 8
+        Me.pbxNombreBanco.Size = New System.Drawing.Size(424, 92)
+        Me.pbxNombreBanco.TabIndex = 32
         Me.pbxNombreBanco.TabStop = False
         '
         'pbxLogoBanco
         '
-        Me.pbxLogoBanco.Image = CType(resources.GetObject("pbxLogoBanco.Image"), System.Drawing.Image)
-        Me.pbxLogoBanco.Location = New System.Drawing.Point(12, 12)
+        Me.pbxLogoBanco.BackgroundImage = CType(resources.GetObject("pbxLogoBanco.BackgroundImage"), System.Drawing.Image)
+        Me.pbxLogoBanco.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pbxLogoBanco.Location = New System.Drawing.Point(10, 10)
+        Me.pbxLogoBanco.Margin = New System.Windows.Forms.Padding(1)
         Me.pbxLogoBanco.Name = "pbxLogoBanco"
-        Me.pbxLogoBanco.Size = New System.Drawing.Size(145, 154)
-        Me.pbxLogoBanco.TabIndex = 7
+        Me.pbxLogoBanco.Size = New System.Drawing.Size(102, 92)
+        Me.pbxLogoBanco.TabIndex = 31
         Me.pbxLogoBanco.TabStop = False
         '
         'frmTiempoAire
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 25.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1004, 644)
+        Me.ClientSize = New System.Drawing.Size(703, 386)
         Me.Controls.Add(Me.pbxNombreBanco)
         Me.Controls.Add(Me.pbxLogoBanco)
         Me.Controls.Add(Me.lblInstruccion)
@@ -146,9 +148,9 @@ Partial Class frmTiempoAire
         Me.Controls.Add(Me.Btn50)
         Me.Controls.Add(Me.Btn100)
         Me.Controls.Add(Me.Btn20)
-        Me.Margin = New System.Windows.Forms.Padding(4)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "frmTiempoAire"
-        Me.Text = "FrmTiempoAire"
+        Me.Text = "Cantidad Recarga(Tiempo Aire)"
         CType(Me.pbxNombreBanco, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbxLogoBanco, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

@@ -38,88 +38,96 @@ Partial Class FrmCompania
         'lblInstruccion
         '
         Me.lblInstruccion.AutoSize = True
-        Me.lblInstruccion.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblInstruccion.Location = New System.Drawing.Point(300, 306)
-        Me.lblInstruccion.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblInstruccion.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.lblInstruccion.Location = New System.Drawing.Point(242, 184)
         Me.lblInstruccion.Name = "lblInstruccion"
-        Me.lblInstruccion.Size = New System.Drawing.Size(404, 32)
+        Me.lblInstruccion.Size = New System.Drawing.Size(218, 20)
         Me.lblInstruccion.TabIndex = 14
-        Me.lblInstruccion.Text = "Seleccione la compañia del Telefono"
+        Me.lblInstruccion.Text = "Seleccione su compañía telefonica"
         '
         'BtnRegresar
         '
-        Me.BtnRegresar.Location = New System.Drawing.Point(818, 517)
-        Me.BtnRegresar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BtnRegresar.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.BtnRegresar.Location = New System.Drawing.Point(573, 310)
+        Me.BtnRegresar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnRegresar.Name = "BtnRegresar"
-        Me.BtnRegresar.Size = New System.Drawing.Size(136, 65)
+        Me.BtnRegresar.Size = New System.Drawing.Size(97, 45)
         Me.BtnRegresar.TabIndex = 12
         Me.BtnRegresar.Text = "Regresar"
         Me.BtnRegresar.UseVisualStyleBackColor = True
         '
         'BtnWeex
         '
-        Me.BtnWeex.Location = New System.Drawing.Point(818, 330)
-        Me.BtnWeex.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BtnWeex.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.BtnWeex.Location = New System.Drawing.Point(573, 198)
+        Me.BtnWeex.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnWeex.Name = "BtnWeex"
-        Me.BtnWeex.Size = New System.Drawing.Size(136, 65)
+        Me.BtnWeex.Size = New System.Drawing.Size(97, 45)
         Me.BtnWeex.TabIndex = 11
         Me.BtnWeex.Text = "Weex"
         Me.BtnWeex.UseVisualStyleBackColor = True
         '
         'BtnUnefon
         '
-        Me.BtnUnefon.Location = New System.Drawing.Point(818, 228)
-        Me.BtnUnefon.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BtnUnefon.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.BtnUnefon.Location = New System.Drawing.Point(573, 137)
+        Me.BtnUnefon.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnUnefon.Name = "BtnUnefon"
-        Me.BtnUnefon.Size = New System.Drawing.Size(136, 65)
+        Me.BtnUnefon.Size = New System.Drawing.Size(97, 45)
         Me.BtnUnefon.TabIndex = 10
         Me.BtnUnefon.Text = "Unefon"
         Me.BtnUnefon.UseVisualStyleBackColor = True
         '
         'BtnMovistar
         '
-        Me.BtnMovistar.Location = New System.Drawing.Point(52, 330)
-        Me.BtnMovistar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BtnMovistar.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.BtnMovistar.Location = New System.Drawing.Point(36, 198)
+        Me.BtnMovistar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnMovistar.Name = "BtnMovistar"
-        Me.BtnMovistar.Size = New System.Drawing.Size(136, 65)
+        Me.BtnMovistar.Size = New System.Drawing.Size(97, 45)
         Me.BtnMovistar.TabIndex = 9
         Me.BtnMovistar.Text = "Movistar"
         Me.BtnMovistar.UseVisualStyleBackColor = True
         '
         'BtnTelcel
         '
-        Me.BtnTelcel.Location = New System.Drawing.Point(51, 237)
-        Me.BtnTelcel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BtnTelcel.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.BtnTelcel.Location = New System.Drawing.Point(36, 142)
+        Me.BtnTelcel.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BtnTelcel.Name = "BtnTelcel"
-        Me.BtnTelcel.Size = New System.Drawing.Size(136, 65)
+        Me.BtnTelcel.Size = New System.Drawing.Size(97, 45)
         Me.BtnTelcel.TabIndex = 8
         Me.BtnTelcel.Text = "Telcel"
         Me.BtnTelcel.UseVisualStyleBackColor = True
         '
         'pbxNombreBanco
         '
-        Me.pbxNombreBanco.Image = CType(resources.GetObject("pbxNombreBanco.Image"), System.Drawing.Image)
-        Me.pbxNombreBanco.Location = New System.Drawing.Point(175, 12)
+        Me.pbxNombreBanco.BackgroundImage = CType(resources.GetObject("pbxNombreBanco.BackgroundImage"), System.Drawing.Image)
+        Me.pbxNombreBanco.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pbxNombreBanco.Location = New System.Drawing.Point(124, 10)
+        Me.pbxNombreBanco.Margin = New System.Windows.Forms.Padding(1)
         Me.pbxNombreBanco.Name = "pbxNombreBanco"
-        Me.pbxNombreBanco.Size = New System.Drawing.Size(606, 154)
-        Me.pbxNombreBanco.TabIndex = 16
+        Me.pbxNombreBanco.Size = New System.Drawing.Size(424, 92)
+        Me.pbxNombreBanco.TabIndex = 32
         Me.pbxNombreBanco.TabStop = False
         '
         'pbxLogoBanco
         '
-        Me.pbxLogoBanco.Image = CType(resources.GetObject("pbxLogoBanco.Image"), System.Drawing.Image)
-        Me.pbxLogoBanco.Location = New System.Drawing.Point(12, 12)
+        Me.pbxLogoBanco.BackgroundImage = CType(resources.GetObject("pbxLogoBanco.BackgroundImage"), System.Drawing.Image)
+        Me.pbxLogoBanco.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pbxLogoBanco.Location = New System.Drawing.Point(10, 10)
+        Me.pbxLogoBanco.Margin = New System.Windows.Forms.Padding(1)
         Me.pbxLogoBanco.Name = "pbxLogoBanco"
-        Me.pbxLogoBanco.Size = New System.Drawing.Size(145, 154)
-        Me.pbxLogoBanco.TabIndex = 15
+        Me.pbxLogoBanco.Size = New System.Drawing.Size(102, 92)
+        Me.pbxLogoBanco.TabIndex = 31
         Me.pbxLogoBanco.TabStop = False
         '
         'FrmCompania
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 25.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1004, 644)
+        Me.ClientSize = New System.Drawing.Size(703, 386)
         Me.Controls.Add(Me.pbxNombreBanco)
         Me.Controls.Add(Me.pbxLogoBanco)
         Me.Controls.Add(Me.lblInstruccion)
@@ -128,9 +136,9 @@ Partial Class FrmCompania
         Me.Controls.Add(Me.BtnUnefon)
         Me.Controls.Add(Me.BtnMovistar)
         Me.Controls.Add(Me.BtnTelcel)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "FrmCompania"
-        Me.Text = "Compañia Telefonica"
+        Me.Text = "Compañía Telefonica"
         CType(Me.pbxNombreBanco, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbxLogoBanco, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

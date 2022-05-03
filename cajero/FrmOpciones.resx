@@ -58,7 +58,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pbxNombreBanco.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pbxNombreBanco.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAcQAAAB8CAYAAAD3scCzAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAW
         JQAAFiUBSVIk8AAAC9RJREFUeF7t3e1R40oURdEJgATIgAwmA0IgBDKYFCYFUnAKLwViIAVi8NMd7KKq
@@ -115,10 +115,10 @@
         YII=
 </value>
   </data>
-  <data name="pbxLogoBanco.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pbxLogoBanco.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vAAADrwBlbxySQAADW9JREFUeF7tnQ/MVnUVx0PQikr6gysXRb48xesLLw9/3MC1sFUqZZYmmVm0iGVm
+        wgAADsIBFShKgAAADW9JREFUeF7tnQ/MVnUVx0PQikr6gysXRb48xesLLw9/3MC1sFUqZZYmmVm0iGVm
         5WqKK2BYLlMXYJqubJg1iabZhkDlwnAYETazoQ1q2SSz2XARRhD/7XPgvPi8v+d37/3de3/P/fO8v+/2
         3fPCc875nd8557l/z/3dlwQEBAQEBAQEBAQEBAQEBBSCqVOnTpsyZUpD/xkwVNBsNt9C4n9EARyG9+t/
         B3Q7+vr6XkvCl8J906ZNe0HI30fgO1QkoBvRaDReSpKvhjsHEm9ws4oGdBmGsan/OInfbkn6ICJzseoE

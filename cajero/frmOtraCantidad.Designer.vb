@@ -27,11 +27,11 @@ Partial Class frmOtraCantidad
         Me.txtSaldoRetirar = New System.Windows.Forms.TextBox()
         Me.btnRegresar = New System.Windows.Forms.Button()
         Me.btnRetirar = New System.Windows.Forms.Button()
-        Me.pbxNombreBanco = New System.Windows.Forms.PictureBox()
-        Me.pbxLogoBanco = New System.Windows.Forms.PictureBox()
         Me.lblSaldo = New System.Windows.Forms.Label()
         Me.lblSaldoRetirar = New System.Windows.Forms.Label()
         Me.lblAnuncioMultiplos = New System.Windows.Forms.Label()
+        Me.pbxNombreBanco = New System.Windows.Forms.PictureBox()
+        Me.pbxLogoBanco = New System.Windows.Forms.PictureBox()
         CType(Me.pbxNombreBanco, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbxLogoBanco, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -41,70 +41,49 @@ Partial Class frmOtraCantidad
         Me.lblCantidadSaldo.BackColor = System.Drawing.Color.White
         Me.lblCantidadSaldo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblCantidadSaldo.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblCantidadSaldo.Location = New System.Drawing.Point(216, 238)
-        Me.lblCantidadSaldo.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblCantidadSaldo.Location = New System.Drawing.Point(151, 143)
         Me.lblCantidadSaldo.Name = "lblCantidadSaldo"
-        Me.lblCantidadSaldo.Size = New System.Drawing.Size(243, 74)
+        Me.lblCantidadSaldo.Size = New System.Drawing.Size(171, 45)
         Me.lblCantidadSaldo.TabIndex = 0
         Me.lblCantidadSaldo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'txtSaldoRetirar
         '
         Me.txtSaldoRetirar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.txtSaldoRetirar.Location = New System.Drawing.Point(216, 497)
-        Me.txtSaldoRetirar.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.txtSaldoRetirar.Location = New System.Drawing.Point(151, 298)
         Me.txtSaldoRetirar.Name = "txtSaldoRetirar"
-        Me.txtSaldoRetirar.Size = New System.Drawing.Size(243, 39)
+        Me.txtSaldoRetirar.Size = New System.Drawing.Size(171, 29)
         Me.txtSaldoRetirar.TabIndex = 1
         Me.txtSaldoRetirar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'btnRegresar
         '
-        Me.btnRegresar.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.btnRegresar.Location = New System.Drawing.Point(811, 535)
-        Me.btnRegresar.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnRegresar.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btnRegresar.Location = New System.Drawing.Point(568, 321)
         Me.btnRegresar.Name = "btnRegresar"
-        Me.btnRegresar.Size = New System.Drawing.Size(136, 65)
+        Me.btnRegresar.Size = New System.Drawing.Size(95, 47)
         Me.btnRegresar.TabIndex = 2
         Me.btnRegresar.Text = "Regresar"
         Me.btnRegresar.UseVisualStyleBackColor = True
         '
         'btnRetirar
         '
-        Me.btnRetirar.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.btnRetirar.Location = New System.Drawing.Point(811, 422)
-        Me.btnRetirar.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnRetirar.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btnRetirar.Location = New System.Drawing.Point(568, 253)
         Me.btnRetirar.Name = "btnRetirar"
-        Me.btnRetirar.Size = New System.Drawing.Size(136, 65)
+        Me.btnRetirar.Size = New System.Drawing.Size(95, 47)
         Me.btnRetirar.TabIndex = 3
         Me.btnRetirar.Text = "Retirar"
         Me.btnRetirar.UseVisualStyleBackColor = True
-        '
-        'pbxNombreBanco
-        '
-        Me.pbxNombreBanco.Image = CType(resources.GetObject("pbxNombreBanco.Image"), System.Drawing.Image)
-        Me.pbxNombreBanco.Location = New System.Drawing.Point(174, 12)
-        Me.pbxNombreBanco.Name = "pbxNombreBanco"
-        Me.pbxNombreBanco.Size = New System.Drawing.Size(606, 153)
-        Me.pbxNombreBanco.TabIndex = 12
-        Me.pbxNombreBanco.TabStop = False
-        '
-        'pbxLogoBanco
-        '
-        Me.pbxLogoBanco.Image = CType(resources.GetObject("pbxLogoBanco.Image"), System.Drawing.Image)
-        Me.pbxLogoBanco.Location = New System.Drawing.Point(11, 12)
-        Me.pbxLogoBanco.Name = "pbxLogoBanco"
-        Me.pbxLogoBanco.Size = New System.Drawing.Size(146, 153)
-        Me.pbxLogoBanco.TabIndex = 11
-        Me.pbxLogoBanco.TabStop = False
         '
         'lblSaldo
         '
         Me.lblSaldo.AutoSize = True
         Me.lblSaldo.Font = New System.Drawing.Font("Arial", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.lblSaldo.Location = New System.Drawing.Point(297, 202)
+        Me.lblSaldo.Location = New System.Drawing.Point(208, 121)
+        Me.lblSaldo.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblSaldo.Name = "lblSaldo"
-        Me.lblSaldo.Size = New System.Drawing.Size(92, 33)
+        Me.lblSaldo.Size = New System.Drawing.Size(63, 22)
         Me.lblSaldo.TabIndex = 13
         Me.lblSaldo.Text = "Saldo"
         '
@@ -112,40 +91,61 @@ Partial Class frmOtraCantidad
         '
         Me.lblSaldoRetirar.AutoSize = True
         Me.lblSaldoRetirar.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.lblSaldoRetirar.Location = New System.Drawing.Point(237, 398)
+        Me.lblSaldoRetirar.Location = New System.Drawing.Point(166, 239)
+        Me.lblSaldoRetirar.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblSaldoRetirar.Name = "lblSaldoRetirar"
-        Me.lblSaldoRetirar.Size = New System.Drawing.Size(211, 29)
+        Me.lblSaldoRetirar.Size = New System.Drawing.Size(140, 19)
         Me.lblSaldoRetirar.TabIndex = 14
         Me.lblSaldoRetirar.Text = "Cantidad a retirar"
         '
         'lblAnuncioMultiplos
         '
         Me.lblAnuncioMultiplos.AutoSize = True
-        Me.lblAnuncioMultiplos.Location = New System.Drawing.Point(101, 442)
-        Me.lblAnuncioMultiplos.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblAnuncioMultiplos.Location = New System.Drawing.Point(71, 265)
         Me.lblAnuncioMultiplos.Name = "lblAnuncioMultiplos"
-        Me.lblAnuncioMultiplos.Size = New System.Drawing.Size(532, 25)
+        Me.lblAnuncioMultiplos.Size = New System.Drawing.Size(348, 15)
         Me.lblAnuncioMultiplos.TabIndex = 15
         Me.lblAnuncioMultiplos.Text = "Solo puede retirar efectivo en multiplos de $200 (Maximo $5,000)"
         '
+        'pbxNombreBanco
+        '
+        Me.pbxNombreBanco.BackgroundImage = CType(resources.GetObject("pbxNombreBanco.BackgroundImage"), System.Drawing.Image)
+        Me.pbxNombreBanco.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pbxNombreBanco.Location = New System.Drawing.Point(124, 10)
+        Me.pbxNombreBanco.Margin = New System.Windows.Forms.Padding(1)
+        Me.pbxNombreBanco.Name = "pbxNombreBanco"
+        Me.pbxNombreBanco.Size = New System.Drawing.Size(424, 92)
+        Me.pbxNombreBanco.TabIndex = 32
+        Me.pbxNombreBanco.TabStop = False
+        '
+        'pbxLogoBanco
+        '
+        Me.pbxLogoBanco.BackgroundImage = CType(resources.GetObject("pbxLogoBanco.BackgroundImage"), System.Drawing.Image)
+        Me.pbxLogoBanco.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pbxLogoBanco.Location = New System.Drawing.Point(10, 10)
+        Me.pbxLogoBanco.Margin = New System.Windows.Forms.Padding(1)
+        Me.pbxLogoBanco.Name = "pbxLogoBanco"
+        Me.pbxLogoBanco.Size = New System.Drawing.Size(102, 92)
+        Me.pbxLogoBanco.TabIndex = 31
+        Me.pbxLogoBanco.TabStop = False
+        '
         'frmOtraCantidad
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 25.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1004, 643)
+        Me.ClientSize = New System.Drawing.Size(703, 386)
+        Me.Controls.Add(Me.pbxNombreBanco)
+        Me.Controls.Add(Me.pbxLogoBanco)
         Me.Controls.Add(Me.lblAnuncioMultiplos)
         Me.Controls.Add(Me.lblSaldoRetirar)
         Me.Controls.Add(Me.lblSaldo)
         Me.Controls.Add(Me.lblCantidadSaldo)
         Me.Controls.Add(Me.txtSaldoRetirar)
-        Me.Controls.Add(Me.pbxNombreBanco)
-        Me.Controls.Add(Me.pbxLogoBanco)
         Me.Controls.Add(Me.btnRetirar)
         Me.Controls.Add(Me.btnRegresar)
-        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "frmOtraCantidad"
-        Me.Text = "frmOtraCantidad"
+        Me.Text = "Otra Cantidad"
         CType(Me.pbxNombreBanco, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbxLogoBanco, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -157,9 +157,9 @@ Partial Class frmOtraCantidad
     Friend WithEvents txtSaldoRetirar As TextBox
     Friend WithEvents btnRegresar As Button
     Friend WithEvents btnRetirar As Button
-    Friend WithEvents pbxNombreBanco As PictureBox
-    Friend WithEvents pbxLogoBanco As PictureBox
     Friend WithEvents lblSaldo As Label
     Friend WithEvents lblSaldoRetirar As Label
     Friend WithEvents lblAnuncioMultiplos As Label
+    Friend WithEvents pbxNombreBanco As PictureBox
+    Friend WithEvents pbxLogoBanco As PictureBox
 End Class
