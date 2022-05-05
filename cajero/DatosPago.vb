@@ -156,14 +156,22 @@
     End Sub
 
     Private Sub txtReferencia_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtReferencia.KeyPress 'Hace que Referencia solo acepte numeros
-        If Not IsNumeric(e.KeyChar) Then
-            e.Handled = True
+        Dim ascii As Integer
+        ascii = Asc(e.KeyChar)
+        If Not ((ascii = 8) Or (ascii >= 48 And ascii <= 57)) Then 'Revisa que la tecla presionada sea un numero
+            e.Handled = True 'Si no es asi evita la insercion de la letra presionada
         End If
     End Sub
 
     Private Sub txtCantidad_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtCantidad.KeyPress 'Hace que cantidad solo acepte numeros
-        If Not IsNumeric(e.KeyChar) Then
-            e.Handled = True
+        Dim ascii As Integer
+        ascii = Asc(e.KeyChar)
+        If Not ((ascii = 46) Or (ascii = 8) Or (ascii >= 48 And ascii <= 57)) Then 'Revisa que la tecla presionada sea un numero
+            e.Handled = True 'Si no es asi evita la insercion de la letra presionada
         End If
+    End Sub
+
+    Private Sub txtReferencia_TextChanged(sender As Object, e As EventArgs) Handles txtReferencia.TextChanged
+
     End Sub
 End Class

@@ -41,27 +41,29 @@ Partial Class frmOtraCantidad
         Me.lblCantidadSaldo.BackColor = System.Drawing.Color.White
         Me.lblCantidadSaldo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblCantidadSaldo.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblCantidadSaldo.Location = New System.Drawing.Point(151, 143)
+        Me.lblCantidadSaldo.Location = New System.Drawing.Point(173, 191)
         Me.lblCantidadSaldo.Name = "lblCantidadSaldo"
-        Me.lblCantidadSaldo.Size = New System.Drawing.Size(171, 45)
+        Me.lblCantidadSaldo.Size = New System.Drawing.Size(195, 59)
         Me.lblCantidadSaldo.TabIndex = 0
         Me.lblCantidadSaldo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'txtSaldoRetirar
         '
         Me.txtSaldoRetirar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.txtSaldoRetirar.Location = New System.Drawing.Point(151, 298)
+        Me.txtSaldoRetirar.Location = New System.Drawing.Point(173, 397)
+        Me.txtSaldoRetirar.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtSaldoRetirar.Name = "txtSaldoRetirar"
-        Me.txtSaldoRetirar.Size = New System.Drawing.Size(171, 29)
+        Me.txtSaldoRetirar.Size = New System.Drawing.Size(195, 34)
         Me.txtSaldoRetirar.TabIndex = 1
         Me.txtSaldoRetirar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'btnRegresar
         '
         Me.btnRegresar.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.btnRegresar.Location = New System.Drawing.Point(568, 321)
+        Me.btnRegresar.Location = New System.Drawing.Point(649, 428)
+        Me.btnRegresar.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnRegresar.Name = "btnRegresar"
-        Me.btnRegresar.Size = New System.Drawing.Size(95, 47)
+        Me.btnRegresar.Size = New System.Drawing.Size(109, 63)
         Me.btnRegresar.TabIndex = 2
         Me.btnRegresar.Text = "Regresar"
         Me.btnRegresar.UseVisualStyleBackColor = True
@@ -69,9 +71,10 @@ Partial Class frmOtraCantidad
         'btnRetirar
         '
         Me.btnRetirar.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.btnRetirar.Location = New System.Drawing.Point(568, 253)
+        Me.btnRetirar.Location = New System.Drawing.Point(649, 337)
+        Me.btnRetirar.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnRetirar.Name = "btnRetirar"
-        Me.btnRetirar.Size = New System.Drawing.Size(95, 47)
+        Me.btnRetirar.Size = New System.Drawing.Size(109, 63)
         Me.btnRetirar.TabIndex = 3
         Me.btnRetirar.Text = "Retirar"
         Me.btnRetirar.UseVisualStyleBackColor = True
@@ -80,10 +83,10 @@ Partial Class frmOtraCantidad
         '
         Me.lblSaldo.AutoSize = True
         Me.lblSaldo.Font = New System.Drawing.Font("Arial", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.lblSaldo.Location = New System.Drawing.Point(208, 121)
+        Me.lblSaldo.Location = New System.Drawing.Point(238, 161)
         Me.lblSaldo.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblSaldo.Name = "lblSaldo"
-        Me.lblSaldo.Size = New System.Drawing.Size(63, 22)
+        Me.lblSaldo.Size = New System.Drawing.Size(79, 29)
         Me.lblSaldo.TabIndex = 13
         Me.lblSaldo.Text = "Saldo"
         '
@@ -91,19 +94,19 @@ Partial Class frmOtraCantidad
         '
         Me.lblSaldoRetirar.AutoSize = True
         Me.lblSaldoRetirar.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.lblSaldoRetirar.Location = New System.Drawing.Point(166, 239)
+        Me.lblSaldoRetirar.Location = New System.Drawing.Point(190, 319)
         Me.lblSaldoRetirar.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblSaldoRetirar.Name = "lblSaldoRetirar"
-        Me.lblSaldoRetirar.Size = New System.Drawing.Size(140, 19)
+        Me.lblSaldoRetirar.Size = New System.Drawing.Size(175, 24)
         Me.lblSaldoRetirar.TabIndex = 14
         Me.lblSaldoRetirar.Text = "Cantidad a retirar"
         '
         'lblAnuncioMultiplos
         '
         Me.lblAnuncioMultiplos.AutoSize = True
-        Me.lblAnuncioMultiplos.Location = New System.Drawing.Point(71, 265)
+        Me.lblAnuncioMultiplos.Location = New System.Drawing.Point(81, 353)
         Me.lblAnuncioMultiplos.Name = "lblAnuncioMultiplos"
-        Me.lblAnuncioMultiplos.Size = New System.Drawing.Size(348, 15)
+        Me.lblAnuncioMultiplos.Size = New System.Drawing.Size(444, 20)
         Me.lblAnuncioMultiplos.TabIndex = 15
         Me.lblAnuncioMultiplos.Text = "Solo puede retirar efectivo en multiplos de $200 (Maximo $5,000)"
         '
@@ -111,10 +114,10 @@ Partial Class frmOtraCantidad
         '
         Me.pbxNombreBanco.BackgroundImage = CType(resources.GetObject("pbxNombreBanco.BackgroundImage"), System.Drawing.Image)
         Me.pbxNombreBanco.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.pbxNombreBanco.Location = New System.Drawing.Point(124, 10)
+        Me.pbxNombreBanco.Location = New System.Drawing.Point(142, 13)
         Me.pbxNombreBanco.Margin = New System.Windows.Forms.Padding(1)
         Me.pbxNombreBanco.Name = "pbxNombreBanco"
-        Me.pbxNombreBanco.Size = New System.Drawing.Size(424, 92)
+        Me.pbxNombreBanco.Size = New System.Drawing.Size(485, 123)
         Me.pbxNombreBanco.TabIndex = 32
         Me.pbxNombreBanco.TabStop = False
         '
@@ -122,19 +125,19 @@ Partial Class frmOtraCantidad
         '
         Me.pbxLogoBanco.BackgroundImage = CType(resources.GetObject("pbxLogoBanco.BackgroundImage"), System.Drawing.Image)
         Me.pbxLogoBanco.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.pbxLogoBanco.Location = New System.Drawing.Point(10, 10)
+        Me.pbxLogoBanco.Location = New System.Drawing.Point(11, 13)
         Me.pbxLogoBanco.Margin = New System.Windows.Forms.Padding(1)
         Me.pbxLogoBanco.Name = "pbxLogoBanco"
-        Me.pbxLogoBanco.Size = New System.Drawing.Size(102, 92)
+        Me.pbxLogoBanco.Size = New System.Drawing.Size(117, 123)
         Me.pbxLogoBanco.TabIndex = 31
         Me.pbxLogoBanco.TabStop = False
         '
         'frmOtraCantidad
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(703, 386)
+        Me.ClientSize = New System.Drawing.Size(803, 515)
         Me.Controls.Add(Me.pbxNombreBanco)
         Me.Controls.Add(Me.pbxLogoBanco)
         Me.Controls.Add(Me.lblAnuncioMultiplos)
@@ -144,6 +147,7 @@ Partial Class frmOtraCantidad
         Me.Controls.Add(Me.txtSaldoRetirar)
         Me.Controls.Add(Me.btnRetirar)
         Me.Controls.Add(Me.btnRegresar)
+        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "frmOtraCantidad"
         Me.Text = "Otra Cantidad"
         CType(Me.pbxNombreBanco, System.ComponentModel.ISupportInitialize).EndInit()

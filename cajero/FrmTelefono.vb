@@ -98,8 +98,14 @@
     End Sub
 
     Private Sub TbxNumero_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TbxNumero.KeyPress
-        If Not IsNumeric(e.KeyChar) Then 'Revisa que la tecla presionada sea un numero
-            e.Handled = True 'Si es asi deja que se inserte el numero
+        Dim ascii As Integer
+        ascii = Asc(e.KeyChar)
+        If Not ((ascii = 8) Or (ascii >= 48 And ascii <= 57)) Then 'Revisa que la tecla presionada sea un numero
+            e.Handled = True 'Si no es asi evita la insercion de la letra presionada
         End If
+    End Sub
+
+    Private Sub TbxNumero_TextChanged(sender As Object, e As EventArgs) Handles TbxNumero.TextChanged
+
     End Sub
 End Class
